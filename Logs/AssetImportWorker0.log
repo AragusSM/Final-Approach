@@ -1,0 +1,1381 @@
+Unity Editor version:    2021.3.19f1 (c9714fde33b6)
+Branch:                  2021.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.6 (Build 21G115)
+Darwin version:          21.6.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        32768 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/anandvalavalkar/Documents/Panopticon/UT/cs-378-vr/final-approach-vr
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63537
+Successfully changed project path to: /Users/anandvalavalkar/Documents/Panopticon/UT/cs-378-vr/final-approach-vr
+/Users/anandvalavalkar/Documents/Panopticon/UT/cs-378-vr/final-approach-vr
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [4437820800] Host "[IP] 192.168.0.184 [Port] 0 [Flags] 2 [Guid] 2564021230 [EditorId] 2564021230 [Version] 1048832 [Id] OSXEditor(0,Anands-MBP.grandenetworks.net) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [4437820800] Host "[IP] 192.168.0.184 [Port] 0 [Flags] 2 [Guid] 2564021230 [EditorId] 2564021230 [Version] 1048832 [Id] OSXEditor(0,Anands-MBP.grandenetworks.net) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 88.44 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 3.65 ms.
+Initialize engine version: 2021.3.19f1 (c9714fde33b6)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/anandvalavalkar/Documents/Panopticon/UT/cs-378-vr/final-approach-vr/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 Pro (high power)
+Metal devices available: 1
+0: Apple M1 Pro (high power)
+Using device Apple M1 Pro (high power)
+Initializing Metal device caps: Apple M1 Pro
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56700
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2021.3.19f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.001257 seconds.
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 75 ms
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 78.99 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.29 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.517 seconds
+Domain Reload Profiling:
+	ReloadAssembly (517ms)
+		BeginReloadAssembly (46ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (0ms)
+		EndReloadAssembly (400ms)
+			LoadAssemblies (46ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (78ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (275ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (124ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (79ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (47ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.006329 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/anandvalavalkar/Documents/Panopticon/UT/cs-378-vr/final-approach-vr/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/anandvalavalkar/Documents/Panopticon/UT/cs-378-vr/final-approach-vr/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 83.77 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.22 ms.
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Completed reload, in  0.836 seconds
+Domain Reload Profiling:
+	ReloadAssembly (836ms)
+		BeginReloadAssembly (60ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (698ms)
+			LoadAssemblies (53ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (223ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (42ms)
+			SetupLoadedEditorAssemblies (329ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (84ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (163ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (2ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launching external process: /Applications/Unity/Hub/Editor/2021.3.19f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.23 ms.
+Unloading 3785 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 52 unused Assets / (89.3 KB). Loaded Objects now: 4225.
+Memory consumption went from 129.9 MB to 129.8 MB.
+Total: 2.390500 ms (FindLiveObjects: 0.106583 ms CreateObjectMapping: 0.042000 ms MarkObjects: 2.153000 ms  DeleteObjects: 0.088125 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 38065.871987 seconds.
+  path: Assets/Mobile_Airport/Scenes/Airtport_Scene.unity
+  artifactKey: Guid(fa8944c5963fb97469fb35f42891b698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Scenes/Airtport_Scene.unity using Guid(fa8944c5963fb97469fb35f42891b698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33e7a3b883290ee6fdda6792e8b7fcd6') in 0.005500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 291.587425 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Airplanes/Materials/flugzeug_doppelreifen-reifen.mat
+  artifactKey: Guid(6e7a2a5383b80e84fb3a052d7729e5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Airplanes/Materials/flugzeug_doppelreifen-reifen.mat using Guid(6e7a2a5383b80e84fb3a052d7729e5b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92715159f4fbcc4f2e30599caaa61ca9') in 0.576928 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Airplanes/Materials/passagiermaschine_747-main.mat
+  artifactKey: Guid(d222554ae1241d745879f2d4c3ea7375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Airplanes/Materials/passagiermaschine_747-main.mat using Guid(d222554ae1241d745879f2d4c3ea7375) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ea926c56883da058b9bf66318712858') in 0.077210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Airplanes/Materials/passagiermaschine_707_colmesh-colmesh.mat
+  artifactKey: Guid(d7215497e311fb24aa2bd9944da18031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Airplanes/Materials/passagiermaschine_707_colmesh-colmesh.mat using Guid(d7215497e311fb24aa2bd9944da18031) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1a2e2e85ef963d152633a9f9d9289b3') in 0.141635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Airplanes/Materials/frachtmaschine_antonov-main.mat
+  artifactKey: Guid(bbe9542ed57b68040a35785079dd3c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Airplanes/Materials/frachtmaschine_antonov-main.mat using Guid(bbe9542ed57b68040a35785079dd3c97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64f466746c4c1b142cbab75f503aa6f5') in 0.006127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Airplanes/Materials/frachtmaschine_antonov_colmesh-colmesh.mat
+  artifactKey: Guid(4d35b0cd14d924f6c8d520716bca87fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Airplanes/Materials/frachtmaschine_antonov_colmesh-colmesh.mat using Guid(4d35b0cd14d924f6c8d520716bca87fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22eeea52a44f6bb98ec9b900d21f1fe6') in 0.005409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Airplanes/Materials/flugzeug_rotor-rotor.mat
+  artifactKey: Guid(11bdade8b91b8324bb4aaf7265f2fe0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Airplanes/Materials/flugzeug_rotor-rotor.mat using Guid(11bdade8b91b8324bb4aaf7265f2fe0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26c8df70db3a8608f0e1ab40d1ad715a') in 0.202678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Airplanes/Materials/privatjet1_colmesh-colmesh.mat
+  artifactKey: Guid(4186c668990f3d74296d980e1f9a44bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Airplanes/Materials/privatjet1_colmesh-colmesh.mat using Guid(4186c668990f3d74296d980e1f9a44bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab6a885813f58347c023fdbe2ea0626f') in 0.004259 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Airplanes/Materials/frachtmaschine_757-main.mat
+  artifactKey: Guid(4b239ec2f25162e408e1d5890c458f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Airplanes/Materials/frachtmaschine_757-main.mat using Guid(4b239ec2f25162e408e1d5890c458f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c54d1be9ae63a5a2c77d2ad465b020') in 0.006867 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Airplanes/Materials/flugzeug_triebwerk-triebwerk.mat
+  artifactKey: Guid(688330749fb7617498762ac8503ea672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Airplanes/Materials/flugzeug_triebwerk-triebwerk.mat using Guid(688330749fb7617498762ac8503ea672) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23ee10b8d0c854790296b13817acb875') in 0.005769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Airplanes/Materials/privatjet2-main.mat
+  artifactKey: Guid(eb75b8e824962bd4a92ab39bffd71a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Airplanes/Materials/privatjet2-main.mat using Guid(eb75b8e824962bd4a92ab39bffd71a06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd547a135c49174d9a4cedb698722a6c8') in 0.006788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Airplanes/Materials/passagiermaschine_bae146_colmesh-colmesh.mat
+  artifactKey: Guid(2885919409e37154faff4b69ab43842b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Airplanes/Materials/passagiermaschine_bae146_colmesh-colmesh.mat using Guid(2885919409e37154faff4b69ab43842b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75550c118556d6ef524afd5e92bb6352') in 0.007099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Airplanes/Materials/passagiermaschine_bae146-main.mat
+  artifactKey: Guid(2331c3a797e2b84459b5ce14761bebf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Airplanes/Materials/passagiermaschine_bae146-main.mat using Guid(2331c3a797e2b84459b5ce14761bebf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4cb90aaf805e21f5e8ba3028b3c8212') in 0.007157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.250243 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Airplanes/frachtmaschine_757_static.prefab
+  artifactKey: Guid(0cc3d35662c62044bad1883ad9c0c2ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Airplanes/frachtmaschine_757_static.prefab using Guid(0cc3d35662c62044bad1883ad9c0c2ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84be7c1e58881146f01afbb37cf4946f') in 0.423794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Airplanes/helicopter_hughes_static.prefab
+  artifactKey: Guid(c8f3d79e3e21706438f541fa26006208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Airplanes/helicopter_hughes_static.prefab using Guid(c8f3d79e3e21706438f541fa26006208) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9d8f3c774c0ab0f365ae238b2ed597e') in 0.006914 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Airplanes/sportflugzeug_cessna_static.prefab
+  artifactKey: Guid(5a14ec48e39ef56438d8c1021f11dad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Airplanes/sportflugzeug_cessna_static.prefab using Guid(5a14ec48e39ef56438d8c1021f11dad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea0182cc3892425d2f2b080d122e9c4b') in 0.122478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 197.063226 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Firetrucks/firefighter_ambulance1.prefab
+  artifactKey: Guid(296877841c0540544bb2769f0cddbbbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Firetrucks/firefighter_ambulance1.prefab using Guid(296877841c0540544bb2769f0cddbbbe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b21e6e9a6e9455c734afbea9d5b931a4') in 0.503227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Firetrucks/firefighter_engine.prefab
+  artifactKey: Guid(06d2bb23e64949349a6e99242ac12bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Firetrucks/firefighter_engine.prefab using Guid(06d2bb23e64949349a6e99242ac12bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91feb578d23d2bef9f52773960983ec4') in 0.035210 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.273981 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/anflug_gleitwinkel_feuer.prefab
+  artifactKey: Guid(e5f356a9fc105b645a648bc208152657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/anflug_gleitwinkel_feuer.prefab using Guid(e5f356a9fc105b645a648bc208152657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c8bc959aab4d09798f2c3092b7fa99e') in 0.051701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/scheinwerfer_mast_01.prefab
+  artifactKey: Guid(b2ae446ecc9000747a4202189c06681e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/scheinwerfer_mast_01.prefab using Guid(b2ae446ecc9000747a4202189c06681e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '076d6b6a2fed3a1b3bdb63f9ada730c6') in 0.006813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/maus.prefab
+  artifactKey: Guid(68c83f10cac2f6b49ae5776443f63447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/maus.prefab using Guid(68c83f10cac2f6b49ae5776443f63447) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9c5eeda4916855975c4b7a2fc6298d7') in 0.005916 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/leuchttafel_mast_01b.prefab
+  artifactKey: Guid(075a1730186a8bf4792690620ab00cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/leuchttafel_mast_01b.prefab using Guid(075a1730186a8bf4792690620ab00cc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4daa1c70bace54fd3804487511f61d67') in 0.006391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/kueche_main.prefab
+  artifactKey: Guid(38ea574f992c4e04caadfe4b52f8935e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/kueche_main.prefab using Guid(38ea574f992c4e04caadfe4b52f8935e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9550c400b873a66a488efbf05afa661') in 0.008047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/lagerhalle_02b.prefab
+  artifactKey: Guid(5b0b92f4fc8879045a203faa7c8b12de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/lagerhalle_02b.prefab using Guid(5b0b92f4fc8879045a203faa7c8b12de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18b24ac9e95eeaf6745f592afd74e61a') in 0.025137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/muelltonne_gelb.prefab
+  artifactKey: Guid(2bf3ab9dc59f75b42afb7919e918e72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/muelltonne_gelb.prefab using Guid(2bf3ab9dc59f75b42afb7919e918e72c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e95f67412a2e813d7d7d0a0a77f577a') in 0.142908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/bueroschrank_gross.prefab
+  artifactKey: Guid(128471743e90bca46bebbc217a96c210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/bueroschrank_gross.prefab using Guid(128471743e90bca46bebbc217a96c210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '943b798c4284e1e534d98a03484f83fd') in 0.011018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/schrank.prefab
+  artifactKey: Guid(fe9a02776cd66e04990cdf06267d7167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/schrank.prefab using Guid(fe9a02776cd66e04990cdf06267d7167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c671d7414215ad8ebde20392961ae4') in 0.014341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/frachtcontainer_02.prefab
+  artifactKey: Guid(55621e60cb7ae2341a9bdef7230f3a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/frachtcontainer_02.prefab using Guid(55621e60cb7ae2341a9bdef7230f3a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fffc6535cbfb1932f72ea672157fda0d') in 0.016670 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/muelltonne_gruen.prefab
+  artifactKey: Guid(dbd2bd3e44543914dbaafdc2055f958a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/muelltonne_gruen.prefab using Guid(dbd2bd3e44543914dbaafdc2055f958a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a469f1766acec890275e4c6de52369f5') in 0.005180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/frachtcontainer_09.prefab
+  artifactKey: Guid(0549783e5e966664c93b80656e858e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/frachtcontainer_09.prefab using Guid(0549783e5e966664c93b80656e858e5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0299a051972ee4196645e80fcf5b3e4b') in 0.006621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/monitor_01.prefab
+  artifactKey: Guid(cfc7a4f5e52ceb644941173dfc1e651b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/monitor_01.prefab using Guid(cfc7a4f5e52ceb644941173dfc1e651b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bc6e95652620a32dd774ad540d3bbfb') in 0.011450 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000095 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/mauspad.prefab
+  artifactKey: Guid(ccd34a96e8becbd42bbab933bde6786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/mauspad.prefab using Guid(ccd34a96e8becbd42bbab933bde6786e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b8d1c8e426456c0a8d91a2cb493c7dd') in 0.005926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/anflugfeuersystem_mast_atr_3m_3er.prefab
+  artifactKey: Guid(e439914b614513c4ba35fd22d7139bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/anflugfeuersystem_mast_atr_3m_3er.prefab using Guid(e439914b614513c4ba35fd22d7139bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cff5cafd2505506c090088ff5f8044b') in 0.005482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/gangway_typ1.prefab
+  artifactKey: Guid(ceabb97a6d286394c95227ed3a9edb21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/gangway_typ1.prefab using Guid(ceabb97a6d286394c95227ed3a9edb21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4503e5ce01bd5d268d544c1fe7cd23d') in 0.271678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/heizung_04.prefab
+  artifactKey: Guid(b947d5f49518e0d468d723b5e8b0fc29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/heizung_04.prefab using Guid(b947d5f49518e0d468d723b5e8b0fc29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fdbb01ab0c4b040a12cc2f63f802647') in 0.007083 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/bett.prefab
+  artifactKey: Guid(c3d5aa65642ccb4478a35398c245c54a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/bett.prefab using Guid(c3d5aa65642ccb4478a35398c245c54a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a24e6c4f5868c822098e27ef2af4ad3') in 0.009767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/bueroschrank_klein.prefab
+  artifactKey: Guid(a6b51ee1e944c18409947a9958d26fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/bueroschrank_klein.prefab using Guid(a6b51ee1e944c18409947a9958d26fe9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '432a87db208f30826898c6b9418fa3c7') in 0.005481 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/anflugfeuersystem_mast_atr_3m_5er.prefab
+  artifactKey: Guid(c40d39cf475877d4eb45877168bc46cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/anflugfeuersystem_mast_atr_3m_5er.prefab using Guid(c40d39cf475877d4eb45877168bc46cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62fe6d0bfaaa17b3dcb143436f9ae33f') in 0.007335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/heizung_02.prefab
+  artifactKey: Guid(dd67626e98f6caa4993106d118045494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/heizung_02.prefab using Guid(dd67626e98f6caa4993106d118045494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1793d5ab098bd0ce0b4f51e77420343') in 0.005721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/muelltonne_02_offen.prefab
+  artifactKey: Guid(3c65f0e90bb21be4282e83de20371202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/muelltonne_02_offen.prefab using Guid(3c65f0e90bb21be4282e83de20371202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a89fea4cb882b356acb1c5b8e01d5aae') in 0.005049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/muelltonne_braun.prefab
+  artifactKey: Guid(419472bbb3a14da40bbbbc005caa69ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/muelltonne_braun.prefab using Guid(419472bbb3a14da40bbbbc005caa69ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e49164bfcb54769178c9e1349da2edc') in 0.005027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/monitor_03.prefab
+  artifactKey: Guid(31c75737953bf8f40bc7c328496683db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/monitor_03.prefab using Guid(31c75737953bf8f40bc7c328496683db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55be2e136478deb267d4d96bfc48c236') in 0.005768 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/karton_02.prefab
+  artifactKey: Guid(c1b6d07cca5419b42b76f4f19e05467c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/karton_02.prefab using Guid(c1b6d07cca5419b42b76f4f19e05467c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a934f667f13c648e49870708463be714') in 0.006072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/anflugfeuersystem_mast_atr_6m_5er.prefab
+  artifactKey: Guid(5c0a77b9eb654cd48be3cb67d15b0093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/anflugfeuersystem_mast_atr_6m_5er.prefab using Guid(5c0a77b9eb654cd48be3cb67d15b0093) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '225f5a4565172559063aeb8afd34d643') in 0.006344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/frachtcontainer_04.prefab
+  artifactKey: Guid(32544076427dfa34fa30d3209c704cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/frachtcontainer_04.prefab using Guid(32544076427dfa34fa30d3209c704cab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b799da10955a19f18f9fa8cb225a5037') in 0.005610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/heizung_01.prefab
+  artifactKey: Guid(bfbc26cc0daa74044b15550f312c446b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/heizung_01.prefab using Guid(bfbc26cc0daa74044b15550f312c446b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6471bd238a65ec0176710c6f1feec38c') in 0.005686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/kleiderstaender.prefab
+  artifactKey: Guid(b374e67b1aaa2a949910a6b506c77150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/kleiderstaender.prefab using Guid(b374e67b1aaa2a949910a6b506c77150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a92f8f812e26ad3b7ddcf0ecd4d8b5fa') in 0.008788 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/scheinwerfer_mast_02c.prefab
+  artifactKey: Guid(94232f1a8759fc9458eee224535e2c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/scheinwerfer_mast_02c.prefab using Guid(94232f1a8759fc9458eee224535e2c86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ae59ee044c7eb3ece5f4c517af7c3c7') in 0.006676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/anflugfeuersystem_mast_atr_9m_3er.prefab
+  artifactKey: Guid(c67eb0c81d4c3ce4681fedbb9517a585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/anflugfeuersystem_mast_atr_9m_3er.prefab using Guid(c67eb0c81d4c3ce4681fedbb9517a585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cce470d811138f19bf94b6cd124007e3') in 0.006142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/scheinwerfer_mast_02b.prefab
+  artifactKey: Guid(cc49af53f93507b4ea57dafabacc7a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/scheinwerfer_mast_02b.prefab using Guid(cc49af53f93507b4ea57dafabacc7a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '633b59f0087dddd0592e556c4eef69a6') in 0.005021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004844 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/rollcontainer.prefab
+  artifactKey: Guid(6c3065c53bdc2544facd40027afc7bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/rollcontainer.prefab using Guid(6c3065c53bdc2544facd40027afc7bd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b3e7a6b275b895baa166e6636c4e0f') in 0.006999 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/frachtcontainer_05.prefab
+  artifactKey: Guid(b9ae9e93846e24e4bbee89970c16c4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/frachtcontainer_05.prefab using Guid(b9ae9e93846e24e4bbee89970c16c4fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de5de219b87dfde87b9e1f4376149d46') in 0.007135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/heizung_03.prefab
+  artifactKey: Guid(75053295134b70c47b5ff8270626fed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/heizung_03.prefab using Guid(75053295134b70c47b5ff8270626fed0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '771579b430edd50a9b8bf845f35ab1e8') in 0.005775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/kuechenschrank.prefab
+  artifactKey: Guid(ee826b3ed2b242e40911d74139c939fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/kuechenschrank.prefab using Guid(ee826b3ed2b242e40911d74139c939fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c24bcfb2eaf808fca42d47f086295fb') in 0.007117 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/lagerhalle_02a.prefab
+  artifactKey: Guid(54dab6b16e6047e4496323fbcfac369e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/lagerhalle_02a.prefab using Guid(54dab6b16e6047e4496323fbcfac369e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9428a9fb32ccc2ce44e8baccc83deda1') in 0.005881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/computer.prefab
+  artifactKey: Guid(825220eb0858df742a3b89de37248437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/computer.prefab using Guid(825220eb0858df742a3b89de37248437) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efa93b8f2c676200f0861bacb89a0f93') in 0.014497 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/startbahn_endfeuer.prefab
+  artifactKey: Guid(0f4a8886dd40a23469c334a531baefb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/startbahn_endfeuer.prefab using Guid(0f4a8886dd40a23469c334a531baefb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e265a93ef2acd4a49b90e5f1d3936e') in 0.010685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.338188 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/taxiway_atr_mittel_signal.prefab
+  artifactKey: Guid(74466a496f8291343b9892319633d09a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/taxiway_atr_mittel_signal.prefab using Guid(74466a496f8291343b9892319633d09a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7798f1f8183430b5a7f537d36d517ee') in 0.008140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/wc_schild_male.prefab
+  artifactKey: Guid(6c3c56181ef0e114dae9644996c3984b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/wc_schild_male.prefab using Guid(6c3c56181ef0e114dae9644996c3984b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9a6c44fb7a9623f7687cb9a1dbea84') in 0.006777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/wc_schild_female.prefab
+  artifactKey: Guid(2c714a1b9b8e8bb408fee19ae00cbf9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/wc_schild_female.prefab using Guid(2c714a1b9b8e8bb408fee19ae00cbf9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '817c6d2ff9324cf4251cb82f002a9a4e') in 0.006331 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/unterflurfeuer.prefab
+  artifactKey: Guid(043828fde82cc964a90dfe5fa1b5287d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/unterflurfeuer.prefab using Guid(043828fde82cc964a90dfe5fa1b5287d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4b715ba4f5b6fa41a974d4213b6d2fe') in 0.010740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/waschbecken.prefab
+  artifactKey: Guid(f44570ce0ee1ab144befafd4c9e499de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/waschbecken.prefab using Guid(f44570ce0ee1ab144befafd4c9e499de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9481751c58f08ee38e64117cf22d691c') in 0.006467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Props/zaunblock_01.prefab
+  artifactKey: Guid(07effdf4bf9458d4e862249e5ea91fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Props/zaunblock_01.prefab using Guid(07effdf4bf9458d4e862249e5ea91fa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf920793472c5fec40b1293e1c8b52fb') in 0.010025 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 199.244739 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Tress/Tree_01.prefab
+  artifactKey: Guid(ee2ac2acba412404f9bf65a6e6fdb0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Tress/Tree_01.prefab using Guid(ee2ac2acba412404f9bf65a6e6fdb0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe6da12241699df8ddf7f5cda7da6ad9') in 0.013396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Tress/Tree_12.prefab
+  artifactKey: Guid(7856a57e4296dae49a8cb78016cc63ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Tress/Tree_12.prefab using Guid(7856a57e4296dae49a8cb78016cc63ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e85988a684a25e720f03c00677bbd2f') in 0.009126 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Tress/Tree_09.prefab
+  artifactKey: Guid(1170115552c83a24d88d9e4cc1eb7e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Tress/Tree_09.prefab using Guid(1170115552c83a24d88d9e4cc1eb7e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '618f571d997d5ba6a3358bd250b2b2d7') in 0.011558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Tress/Tree_06.prefab
+  artifactKey: Guid(d9bba1ec92dadd842b3de27e9b0a289b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Tress/Tree_06.prefab using Guid(d9bba1ec92dadd842b3de27e9b0a289b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '886f9b2c7bd44d8619d45adcf2ab26cf') in 0.007513 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Tress/Tree_16.prefab
+  artifactKey: Guid(4b46f5aa3a7dc034bacd7429415d0863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Tress/Tree_16.prefab using Guid(4b46f5aa3a7dc034bacd7429415d0863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7beb29d678842f061cb37a2c4fd4a25') in 0.006556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Tress/Tree_03.prefab
+  artifactKey: Guid(10006c11d36db2a4c91ff410278afbeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Tress/Tree_03.prefab using Guid(10006c11d36db2a4c91ff410278afbeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '266cab593785908893c56320113ac839') in 0.008242 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Tress/Tree_14.prefab
+  artifactKey: Guid(623e206b90fecbf4ca772c764ff4b68a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Tress/Tree_14.prefab using Guid(623e206b90fecbf4ca772c764ff4b68a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '903f4d7d8977f4f435653f9257bb9afd') in 0.009580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Tress/Tree_07.prefab
+  artifactKey: Guid(ec22bd4f764d43441b3aec6848e42e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Tress/Tree_07.prefab using Guid(ec22bd4f764d43441b3aec6848e42e83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35c845788f1c46def9b319c3ee8848ef') in 0.006453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.483136 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Vehicles/Airport_security.prefab
+  artifactKey: Guid(3cac59888dd3c5744a405433cfe3d49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Vehicles/Airport_security.prefab using Guid(3cac59888dd3c5744a405433cfe3d49a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3efa413586de7e14253bef738ea9301a') in 0.012019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Vehicles/FollowMe.prefab
+  artifactKey: Guid(b7c5e91ca690cfc47a5eb26143a873ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Vehicles/FollowMe.prefab using Guid(b7c5e91ca690cfc47a5eb26143a873ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '660beef5d6f4321ea32935e50bee8ada') in 0.010579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Vehicles/Flugzeugschlepper_01_playback.prefab
+  artifactKey: Guid(f6ef3b182295f5642908d3463b704124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Vehicles/Flugzeugschlepper_01_playback.prefab using Guid(f6ef3b182295f5642908d3463b704124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '057a7ce8338bfd2390d60f01f411084c') in 0.025011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/Prefabs_Vehicles/Fueltruck.prefab
+  artifactKey: Guid(e1deda963942b074e841c8d59fb00ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Prefabs_Vehicles/Fueltruck.prefab using Guid(e1deda963942b074e841c8d59fb00ed9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c90e58d6a1731e1b20dfcf806af898d') in 0.015248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.028610 seconds.
+  path: Assets/Mobile_Airport/Textures_Firetrucks/blitzbalken.bmp
+  artifactKey: Guid(ec805a7df18287a44846a89779cc7851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Firetrucks/blitzbalken.bmp using Guid(ec805a7df18287a44846a89779cc7851) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc33de5c12e7b57b7bd0df400c75956d') in 0.684004 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Mobile_Airport/Textures/kleiderstaender.png
+  artifactKey: Guid(16d15f0354bd87c4fa9b115e2dd215e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/kleiderstaender.png using Guid(16d15f0354bd87c4fa9b115e2dd215e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d9a0fe2ed85b7501138401bbaa17ddf') in 0.377163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Mobile_Airport/Textures/frachtcontainer_04_lo.png
+  artifactKey: Guid(a856228271e1b3a4bb30811356e616f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/frachtcontainer_04_lo.png using Guid(a856228271e1b3a4bb30811356e616f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c2f3e5c32c7087ea149c6f03ee3a531') in 0.005500 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Mobile_Airport/Textures/frachtcontainer_07_lo.png
+  artifactKey: Guid(b0f676aab5ea8b14597fd03f724479aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/frachtcontainer_07_lo.png using Guid(b0f676aab5ea8b14597fd03f724479aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a278a295592244dde6c5ea52bd5cbc18') in 0.004265 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/Textures/frachtcontainer_03_lo.png
+  artifactKey: Guid(533ee38e4a834e64f85ba014c07258d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/frachtcontainer_03_lo.png using Guid(533ee38e4a834e64f85ba014c07258d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1568ad018f6602c24c4b90faecbf5801') in 0.004658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Mobile_Airport/Textures/betonwand_01.bmp
+  artifactKey: Guid(ffd5113cf9f5770439c9b7e29f1533bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/betonwand_01.bmp using Guid(ffd5113cf9f5770439c9b7e29f1533bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11b8d2145269645661bddaa76880fec3') in 0.005721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Mobile_Airport/Textures/frachtmaschine_757.bmp
+  artifactKey: Guid(121ae442a1467cc418788b42551c9214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/frachtmaschine_757.bmp using Guid(121ae442a1467cc418788b42551c9214) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a35a81efdd56c658582af3787cd8b6a') in 0.005489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Mobile_Airport/Textures/frachtterminal_001.png
+  artifactKey: Guid(f5ba25a2e15643f4780c4bb74a147972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/frachtterminal_001.png using Guid(f5ba25a2e15643f4780c4bb74a147972) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42c525e4eb05c4aebd6b72c678b460d5') in 0.005833 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Mobile_Airport/Textures/befeuerung_startbahn_endfeuer_lod_rot.png
+  artifactKey: Guid(53c7fa081ae98ee40b685eb30c2cb4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/befeuerung_startbahn_endfeuer_lod_rot.png using Guid(53c7fa081ae98ee40b685eb30c2cb4e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a5422f84b50530e73bff815a7cac298') in 0.004065 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Mobile_Airport/Textures/flare_01.bmp
+  artifactKey: Guid(285b2c1303d6f4444904798335c2b473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/flare_01.bmp using Guid(285b2c1303d6f4444904798335c2b473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87996a4fb777c0ae8b5185ea7d4d68d7') in 0.004980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Mobile_Airport/Textures/frachtterminal_001_bump.bmp
+  artifactKey: Guid(24f374aba99d1764e872adc890d41843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/frachtterminal_001_bump.bmp using Guid(24f374aba99d1764e872adc890d41843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25494b3f16711436d7af5a27123caadb') in 0.034750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Mobile_Airport/Textures/flugzeughangar_klein.png
+  artifactKey: Guid(09f9f4dee71aa99419a97937d4312246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/flugzeughangar_klein.png using Guid(09f9f4dee71aa99419a97937d4312246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8283b84160206fdfaf92307e50377b8f') in 0.003469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Mobile_Airport/Textures/feuerwache_tor_bump.bmp
+  artifactKey: Guid(27167fd8f89b75341814faeeffa93e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/feuerwache_tor_bump.bmp using Guid(27167fd8f89b75341814faeeffa93e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15a14ca924e03177444579b9424b8e2a') in 0.005831 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Mobile_Airport/Textures/flugzeug_rotor.png
+  artifactKey: Guid(8cf3c553fd3fa8c4dbe739099cac44d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/flugzeug_rotor.png using Guid(8cf3c553fd3fa8c4dbe739099cac44d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb82d044d7f91a134b828ae0bce3324d') in 0.004155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Mobile_Airport/Textures/frachtcontainer_06_lo.png
+  artifactKey: Guid(f5998c8a70b238b4fb62984663007151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/frachtcontainer_06_lo.png using Guid(f5998c8a70b238b4fb62984663007151) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '084615762a11ed80779bae6972a0f94d') in 0.004348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Mobile_Airport/Textures/frachtcontainer_01_lo.png
+  artifactKey: Guid(c90e60541ff69a043a2ef80d9b95667c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/frachtcontainer_01_lo.png using Guid(c90e60541ff69a043a2ef80d9b95667c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aceba9a83164546196abc5130aba5868') in 0.003992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Mobile_Airport/Textures/helicopter_hughes_01.png
+  artifactKey: Guid(25f8c9eaf2549834aaca620d523eef37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/helicopter_hughes_01.png using Guid(25f8c9eaf2549834aaca620d523eef37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1be61d46ec9bb2ffe84841d1a2bc32c2') in 0.006689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Mobile_Airport/Textures/befeuerung_startbahn_endfeuer_lod_gruen.png
+  artifactKey: Guid(44c44b28a99f1df40aeae71be445f6c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/befeuerung_startbahn_endfeuer_lod_gruen.png using Guid(44c44b28a99f1df40aeae71be445f6c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e6ff360f10ef4053942c9e5b1eec903') in 0.004391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Mobile_Airport/Textures/kleiderstaender_bump.bmp
+  artifactKey: Guid(931ddbe6388521b4c892ba21f16b8bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/kleiderstaender_bump.bmp using Guid(931ddbe6388521b4c892ba21f16b8bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b2d4619329ba24419bac00e008df89') in 0.006088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Mobile_Airport/Textures/dachpappe_0003.bmp
+  artifactKey: Guid(d0cb56f8d751a7d498785568a77a37eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/dachpappe_0003.bmp using Guid(d0cb56f8d751a7d498785568a77a37eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08bc3820fd8fc2fa0bd3e297f52e4d40') in 0.004019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Mobile_Airport/Textures/befeuerung_unterflurfeuer_lod_aus.png
+  artifactKey: Guid(49edb18f5227f8740ba7805a826333fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/befeuerung_unterflurfeuer_lod_aus.png using Guid(49edb18f5227f8740ba7805a826333fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ef4005a982f2939e72bbf5831630d52') in 0.005934 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Mobile_Airport/Textures/flugzeugreifen.bmp
+  artifactKey: Guid(173b21af0c7a0e4439a68d09ef0074cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/flugzeugreifen.bmp using Guid(173b21af0c7a0e4439a68d09ef0074cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b979f654e8137e99dc24c724f479c39') in 0.004173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Mobile_Airport/Textures/dachpappe_0006.bmp
+  artifactKey: Guid(447b875568485f94b89af7fb8e02a20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/dachpappe_0006.bmp using Guid(447b875568485f94b89af7fb8e02a20a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29348570345f37c65b11577613f38a77') in 0.005706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Mobile_Airport/Textures/blastbreaker_bump.bmp
+  artifactKey: Guid(68d3f93c27cbcc940975f8a664f8379a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/blastbreaker_bump.bmp using Guid(68d3f93c27cbcc940975f8a664f8379a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '571c0393f9dd00988021c6ce03f6eb27') in 0.003562 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Mobile_Airport/Textures/flugzeugreifen_bump.bmp
+  artifactKey: Guid(f65947156a820684e93e7b3bc4ed6ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/flugzeugreifen_bump.bmp using Guid(f65947156a820684e93e7b3bc4ed6ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38295b8df3d76037714dda8af201c113') in 0.006970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Mobile_Airport/Textures/bg_treeplane_01.png
+  artifactKey: Guid(fd5f3810af3b0784592b5b1e53144ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/bg_treeplane_01.png using Guid(fd5f3810af3b0784592b5b1e53144ab2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26e7206fb886da17a7db5150e7a5f7cb') in 0.005930 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Mobile_Airport/Textures/feuerwache_trennwand.png
+  artifactKey: Guid(9fdf978dde3bfe248ac82e202d373092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/feuerwache_trennwand.png using Guid(9fdf978dde3bfe248ac82e202d373092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a04cc3cf52874c332bf2e119ad7aae7b') in 0.005766 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Mobile_Airport/Textures/aschenbecher_001a.png
+  artifactKey: Guid(61c6743f9f2cf034a82a4b2754b336ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/aschenbecher_001a.png using Guid(61c6743f9f2cf034a82a4b2754b336ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29dc84a6e18d179653f61000e5367af7') in 0.004008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Mobile_Airport/Textures/flugzeughangar_klein_bump.bmp
+  artifactKey: Guid(d85df9ff9d31fe849a16072ccb1309a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/flugzeughangar_klein_bump.bmp using Guid(d85df9ff9d31fe849a16072ccb1309a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3785abb01fc495157a8859722c11229c') in 0.004081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Mobile_Airport/Textures/gangway_001.png
+  artifactKey: Guid(f67983f967a286842aafeea44c9fb505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/gangway_001.png using Guid(f67983f967a286842aafeea44c9fb505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be62f113b6054ca0d6f08f90f024bcae') in 0.005174 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Mobile_Airport/Textures/flugzeug_triebwerk_bump.bmp
+  artifactKey: Guid(90d738d32dd99e241b5c3c4c1897b494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/flugzeug_triebwerk_bump.bmp using Guid(90d738d32dd99e241b5c3c4c1897b494) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e4fbb6d98eabd773aafa7a5bfc82e29') in 0.005411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Mobile_Airport/Textures/heizungen_bump.bmp
+  artifactKey: Guid(0ca1a35b9f3bc3a4d898ec245136cf8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/heizungen_bump.bmp using Guid(0ca1a35b9f3bc3a4d898ec245136cf8e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3ac4997966ee31e5135cbc9e66f59e7') in 0.027499 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Mobile_Airport/Textures/feuerwache_tueren_bump.bmp
+  artifactKey: Guid(e52b11792fad64741a8932d2e282e537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/feuerwache_tueren_bump.bmp using Guid(e52b11792fad64741a8932d2e282e537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f01c511230eff45faf71ec4a40989c9d') in 0.004636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Mobile_Airport/Textures_Firetrucks/notarzt.bmp
+  artifactKey: Guid(34b7c6e50946a5c46b32a29afcb1c628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Firetrucks/notarzt.bmp using Guid(34b7c6e50946a5c46b32a29afcb1c628) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fac07e14b07910eae12ca50d9ff69df') in 0.006202 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Mobile_Airport/Textures/befeuerung_anflugfeuersystem_atr_mast_kaefig.bmp
+  artifactKey: Guid(4b5d1e47240d0fd4d9aeb8e14ffc8a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/befeuerung_anflugfeuersystem_atr_mast_kaefig.bmp using Guid(4b5d1e47240d0fd4d9aeb8e14ffc8a87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59874e24b94974b748fdbc3468035d6c') in 0.006192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Mobile_Airport/Textures/buerotische.png
+  artifactKey: Guid(a4f26277806f3a8429349f427298b071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/buerotische.png using Guid(a4f26277806f3a8429349f427298b071) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d5ea053370b99621bb95e8b08af2aa2') in 0.005789 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Mobile_Airport/Textures/anfluggleitwinkelfeuer.png
+  artifactKey: Guid(d1da1935bd23a494394ab6d4cdb3f51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/anfluggleitwinkelfeuer.png using Guid(d1da1935bd23a494394ab6d4cdb3f51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f20b64f9b4177ddee60809368a8b5e1') in 0.005698 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Mobile_Airport/Textures/computer.bmp
+  artifactKey: Guid(3e54c97bbb42bb044a1a47858c68d4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/computer.bmp using Guid(3e54c97bbb42bb044a1a47858c68d4e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5356220fe3ec0e884f47470684661271') in 0.005830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Mobile_Airport/Textures_Firetrucks/tlf.bmp
+  artifactKey: Guid(b37c2c13c38638b44a5d1351825b3860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Firetrucks/tlf.bmp using Guid(b37c2c13c38638b44a5d1351825b3860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee17cf456c5859218b9df1bea91cd5dd') in 0.005960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Mobile_Airport/Textures/feuerwache_fenster_bump.bmp
+  artifactKey: Guid(a1f2f6522b12c1c45af96dafca0b75b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/feuerwache_fenster_bump.bmp using Guid(a1f2f6522b12c1c45af96dafca0b75b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd406b2a46c9cc77d50e136046177a321') in 0.004960 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Mobile_Airport/Textures/computer_bump.bmp
+  artifactKey: Guid(105f60ea521208647b4ee8b0f888367f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/computer_bump.bmp using Guid(105f60ea521208647b4ee8b0f888367f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4c0339bc9f617cd42d1b15c61bd00eb') in 0.004446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Mobile_Airport/Textures/flugzeug_rotor_bump.bmp
+  artifactKey: Guid(44d93ab2158f4d347b1e5235de9161b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/flugzeug_rotor_bump.bmp using Guid(44d93ab2158f4d347b1e5235de9161b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef78aba1208f29721d8161337e55ace3') in 0.004257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Mobile_Airport/Textures/flugzeug_cessna_01.png
+  artifactKey: Guid(3f69b844c1b4e834e8f2afa19642aab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/flugzeug_cessna_01.png using Guid(3f69b844c1b4e834e8f2afa19642aab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11cc2d067a1a60a97871f9b203d924f8') in 0.005664 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.490255 seconds.
+  path: Assets/Mobile_Airport/Textures/kueche_bump.bmp
+  artifactKey: Guid(2d6bcf760d5c12348808df6eca2fd37f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/kueche_bump.bmp using Guid(2d6bcf760d5c12348808df6eca2fd37f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73d6b92ab8421ed7e40d3cb24611297c') in 0.009151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Mobile_Airport/Textures/lagerhalle_002b.png
+  artifactKey: Guid(aabb21e5dbdb7ed47a58b8bf1d60aec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/lagerhalle_002b.png using Guid(aabb21e5dbdb7ed47a58b8bf1d60aec3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba78d12b18602f9a0f2aa596b5704c75') in 0.007668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Mobile_Airport/Textures/lagerhalle_002b_bump.bmp
+  artifactKey: Guid(9d170b5260bd3be47aab247d8e669c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/lagerhalle_002b_bump.bmp using Guid(9d170b5260bd3be47aab247d8e669c2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36cd4a5055729fda0fc5b04b249a60f4') in 0.005627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Mobile_Airport/Textures/laterne.bmp
+  artifactKey: Guid(f9d956d7f88e8ee41b209683e60ff302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/laterne.bmp using Guid(f9d956d7f88e8ee41b209683e60ff302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3cfb37e2f537f69104a37081fbb2087') in 0.006388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Mobile_Airport/Textures/lagerhalle_002a.png
+  artifactKey: Guid(c8c1811ba3b7ca741ae8104703e7cdb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/lagerhalle_002a.png using Guid(c8c1811ba3b7ca741ae8104703e7cdb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80da1759234e638607d7cb71552959d0') in 0.004055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Mobile_Airport/Textures/lautsprecher_bump.bmp
+  artifactKey: Guid(5f5b5a4efbba5bc4cb61f224d6383573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/lautsprecher_bump.bmp using Guid(5f5b5a4efbba5bc4cb61f224d6383573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eb83a3cbda8c9c9e62fba63225fa11c') in 0.004990 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Mobile_Airport/Textures/lagerhalle_003_bump.bmp
+  artifactKey: Guid(8ca839511513db249896219d64b71f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/lagerhalle_003_bump.bmp using Guid(8ca839511513db249896219d64b71f4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ec072f6a52baf9ff6e37eb11f8846bb') in 0.004446 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Mobile_Airport/Textures/lagerhalle_001a_bump.bmp
+  artifactKey: Guid(fcb81a8862b200e479f384094d60e939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/lagerhalle_001a_bump.bmp using Guid(fcb81a8862b200e479f384094d60e939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '966ad83b9c1d2c21d80c94d647f1a501') in 0.004517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.752103 seconds.
+  path: Assets/Mobile_Airport/Textures/leuchtschild_taxiway.bmp
+  artifactKey: Guid(d77e4ceb11b5b7b48b4c439d2ab2e30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/leuchtschild_taxiway.bmp using Guid(d77e4ceb11b5b7b48b4c439d2ab2e30c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f396a6adda11231514fca1d44bd2784') in 0.007882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000072 seconds.
+  path: Assets/Mobile_Airport/Textures/mauspad.png
+  artifactKey: Guid(0cc2c5b8a54d7c745880f5802a8f4758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/mauspad.png using Guid(0cc2c5b8a54d7c745880f5802a8f4758) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '840448018d3c2dac65e62d8bd97f65b4') in 0.007293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Mobile_Airport/Textures/rollfeld_typ1_endstueck_14l.png
+  artifactKey: Guid(b686618bd372b35478529244648c25ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/rollfeld_typ1_endstueck_14l.png using Guid(b686618bd372b35478529244648c25ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdba01c55539c2e929da1fcbe9776e53') in 0.006463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Mobile_Airport/Textures/rollcontainer_bump.bmp
+  artifactKey: Guid(d8ba24c6f9191f547b57e137ddeb6bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/rollcontainer_bump.bmp using Guid(d8ba24c6f9191f547b57e137ddeb6bd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '725e24bac1947a1d55bcbfc564ce982f') in 0.005673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/Textures/passagiermaschine_707.bmp
+  artifactKey: Guid(6b32853f93962c04aa2df72052f77161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/passagiermaschine_707.bmp using Guid(6b32853f93962c04aa2df72052f77161) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cf8ac1193dbf8e42789d1c722e1b096') in 0.005696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Mobile_Airport/Textures/metalplatten_01.bmp
+  artifactKey: Guid(91a71cb328a48244fba3620395c447e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/metalplatten_01.bmp using Guid(91a71cb328a48244fba3620395c447e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2231b45de9bb1e515895d9225a83ba2f') in 0.005314 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Mobile_Airport/Textures/mauer_01.bmp
+  artifactKey: Guid(d619e81d511dc5e4aa728cc990638c58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/mauer_01.bmp using Guid(d619e81d511dc5e4aa728cc990638c58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bc5552a75053bdfa602dc42f193265') in 0.005253 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Mobile_Airport/Textures/passagiermaschine_747.bmp
+  artifactKey: Guid(fb8751e8ff40e9948bead72f8c590fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/passagiermaschine_747.bmp using Guid(fb8751e8ff40e9948bead72f8c590fb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e7d66814a67463ed200769af0aeb95') in 0.005556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Mobile_Airport/Textures/rollfeld_typ1_endstueck_06.png
+  artifactKey: Guid(f166cff12067ba64fa79bea58f4d6bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/rollfeld_typ1_endstueck_06.png using Guid(f166cff12067ba64fa79bea58f4d6bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cdc474606d7ad051c6ae5087e08b4f3') in 0.005780 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Mobile_Airport/Textures/privatjet2.bmp
+  artifactKey: Guid(6834a006cb0116642b37df29509a62d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/privatjet2.bmp using Guid(6834a006cb0116642b37df29509a62d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a46141de0a5b188af983e1a65dce8c84') in 0.005880 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Mobile_Airport/Textures/maus_bump.bmp
+  artifactKey: Guid(41f33afb01a6d664093ca1f83b48f6b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/maus_bump.bmp using Guid(41f33afb01a6d664093ca1f83b48f6b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44dc62197d531a54e2196548a360478b') in 0.005595 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Mobile_Airport/Textures/privatjet1.bmp
+  artifactKey: Guid(fde301245afc6db4997ec52b80420fc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/privatjet1.bmp using Guid(fde301245afc6db4997ec52b80420fc1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bd8e42a64a759c107efda795e27c704') in 0.005689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Mobile_Airport/Textures/rollfeld_beton_01.png
+  artifactKey: Guid(476aec449de87ca438d7a1773d705721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/rollfeld_beton_01.png using Guid(476aec449de87ca438d7a1773d705721) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3634b3032b93f32c77cc1a43e273cfe4') in 0.005696 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/Textures/rollcontainer.png
+  artifactKey: Guid(3f32cfb075a679f4793d4576d0d02c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/rollcontainer.png using Guid(3f32cfb075a679f4793d4576d0d02c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67071acf910ef8a70ab536661f7966e6') in 0.005134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/Mobile_Airport/Textures/metal_0004a.bmp
+  artifactKey: Guid(7f768356a4a36064786ea311113e951e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/metal_0004a.bmp using Guid(7f768356a4a36064786ea311113e951e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a420f5cb79ad7f68603a5b32d943000') in 0.006195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Mobile_Airport/Textures/passagierterminal_001.png
+  artifactKey: Guid(4f3a06cdff69c3e4ba8091a0e4b753f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/passagierterminal_001.png using Guid(4f3a06cdff69c3e4ba8091a0e4b753f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1721d08094b1443826ab0503b804841c') in 0.005181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.780077 seconds.
+  path: Assets/Mobile_Airport/Textures/rollfeld_typ1_endstueck_14r.png
+  artifactKey: Guid(96d018a04d71405479369c8b01dca00d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/rollfeld_typ1_endstueck_14r.png using Guid(96d018a04d71405479369c8b01dca00d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97aaa35b96f3c50cd5767dd131a09626') in 0.007410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Mobile_Airport/Textures/rutschstangen_bump.bmp
+  artifactKey: Guid(735b48fbd0061b448ae0b77e21cbff13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/rutschstangen_bump.bmp using Guid(735b48fbd0061b448ae0b77e21cbff13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a93be9055ec113f8bda864074744449') in 0.005926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/Textures/rollfeld_wiese_01.bmp
+  artifactKey: Guid(1863e29ce22b6d74c8a52db3acdbf9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/rollfeld_wiese_01.bmp using Guid(1863e29ce22b6d74c8a52db3acdbf9f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3efc5bdc58776ab37f6972fc425b96d3') in 0.006715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Mobile_Airport/Textures/rollfeld_typ1_mit_mittelstreifen.png
+  artifactKey: Guid(27b124f145ac1014cb66b3abb10a47ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/rollfeld_typ1_mit_mittelstreifen.png using Guid(27b124f145ac1014cb66b3abb10a47ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c605fef8dd477e2322055a7acccd563') in 0.005626 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Mobile_Airport/Textures/scheinwerfermast_02.png
+  artifactKey: Guid(cb9ecd2f6cc2eb34c86b4ea46365e735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/scheinwerfermast_02.png using Guid(cb9ecd2f6cc2eb34c86b4ea46365e735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cad7f2c24e3ff6d90cf0c259f945323') in 0.004912 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Mobile_Airport/Textures/scheinwerfermast_01.bmp
+  artifactKey: Guid(f3e4b28d2a2d0f840b152c8fe9e5d797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/scheinwerfermast_01.bmp using Guid(f3e4b28d2a2d0f840b152c8fe9e5d797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '248d38441a90345fce58f543ed967319') in 0.004457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Mobile_Airport/Textures/rollfeld_typ1_mit_doppelstreifen_schmall.png
+  artifactKey: Guid(545c90da94e092140a47e135f6d555fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/rollfeld_typ1_mit_doppelstreifen_schmall.png using Guid(545c90da94e092140a47e135f6d555fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c9a2e6a302d33b174dd9262f7f2ee7') in 0.005239 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Mobile_Airport/Textures/wassertankstelle.png
+  artifactKey: Guid(660d287290c8dfa41ab360e2392cefba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/wassertankstelle.png using Guid(660d287290c8dfa41ab360e2392cefba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8ed081d61b2e5ac49e192d69073168f') in 0.005084 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Mobile_Airport/Textures/schrank_kleidung_bump.bmp
+  artifactKey: Guid(e5fd4787683214148a8dfff5f743a65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/schrank_kleidung_bump.bmp using Guid(e5fd4787683214148a8dfff5f743a65c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24b903fe734a901f84ce0b48aecbdc2a') in 0.003805 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Mobile_Airport/Textures/tapete_0001.bmp
+  artifactKey: Guid(28a5eb3e4afa6ff4496937078c864419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/tapete_0001.bmp using Guid(28a5eb3e4afa6ff4496937078c864419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '531c9b72aa79002bf7df731f945dae99') in 0.005755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.009386 seconds.
+  path: Assets/Mobile_Airport/Textures/tastatur.bmp
+  artifactKey: Guid(8b5951d8211aa3b4494e16909c687f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/tastatur.bmp using Guid(8b5951d8211aa3b4494e16909c687f30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2889572888ba3c05acf897794ea45ddb') in 0.004606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/Textures/waschbecken.bmp
+  artifactKey: Guid(1fb1cce2709a52549b25f215a34da282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/waschbecken.bmp using Guid(1fb1cce2709a52549b25f215a34da282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23e968b3864a1a68822934b949d6c00d') in 0.005648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Mobile_Airport/Textures/wanduhr.png
+  artifactKey: Guid(877aeebfbd5b9dd4ea9a77b87a0cbbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/wanduhr.png using Guid(877aeebfbd5b9dd4ea9a77b87a0cbbdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b470a05bd484256624efc465ce675163') in 0.004676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Mobile_Airport/Textures/wc_schild.bmp
+  artifactKey: Guid(da129edf234b417418e0db5f39a821b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/wc_schild.bmp using Guid(da129edf234b417418e0db5f39a821b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7da89a9b84152f67ca10c8e15abd55f7') in 0.004109 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Mobile_Airport/Textures/tank_0001.bmp
+  artifactKey: Guid(90f17471da093b043816a5cba2f73649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/tank_0001.bmp using Guid(90f17471da093b043816a5cba2f73649) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '630bddc643d21763672f432e55d2e230') in 0.006269 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Mobile_Airport/Textures/ruheraum.png
+  artifactKey: Guid(04e2270db7d30084eacef4b18324cfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures/ruheraum.png using Guid(04e2270db7d30084eacef4b18324cfb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c026f0964cd5155750364a5816e893f') in 0.004854 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.917756 seconds.
+  path: Assets/Mobile_Airport/Textures_Vehicles/blitzbalken_einweiser.bmp
+  artifactKey: Guid(40b56713193cfd14da144fa1c253f8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Vehicles/blitzbalken_einweiser.bmp using Guid(40b56713193cfd14da144fa1c253f8ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af76105240f315a4a79aed8b0ec0785') in 0.006888 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Mobile_Airport/Textures_Vehicles/flugzeugschlepper_reifen.png
+  artifactKey: Guid(1d6b86ce4dcf7964c8962abd3f6fe4cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Vehicles/flugzeugschlepper_reifen.png using Guid(1d6b86ce4dcf7964c8962abd3f6fe4cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3627b2d1b582c4f260cdb263dd6abf69') in 0.008524 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Mobile_Airport/Textures_Vehicles/mobile_gangway.bmp
+  artifactKey: Guid(d5f82335df81a64438e7f1dfebbb5a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Vehicles/mobile_gangway.bmp using Guid(d5f82335df81a64438e7f1dfebbb5a3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324179d8e458d64067eae61ad6bf5e6f') in 0.006541 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Mobile_Airport/Textures_Vehicles/catering_container_truck.bmp
+  artifactKey: Guid(5c6ec9774feb3c747b8d1519d9dd0e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Vehicles/catering_container_truck.bmp using Guid(5c6ec9774feb3c747b8d1519d9dd0e10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0584a543f0f7353012cd525dfed730fd') in 0.007683 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/Textures_Vehicles/einweiser.bmp
+  artifactKey: Guid(3f5d5b8a1a9947b49a47d9ef765c9cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Vehicles/einweiser.bmp using Guid(3f5d5b8a1a9947b49a47d9ef765c9cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7dfea9a5f3e35d9769bba8d883fb5897') in 0.006861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Mobile_Airport/Textures_Vehicles/flugzeugschlepper_01.bmp
+  artifactKey: Guid(4eacf34e087839649a73015640de5327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Vehicles/flugzeugschlepper_01.bmp using Guid(4eacf34e087839649a73015640de5327) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f185227795b888ebfb86e119b8b7db7') in 0.005344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Mobile_Airport/Textures_Vehicles/vorfeldaufsicht.bmp
+  artifactKey: Guid(adb0e8f3494738f4a9d8492e48027ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Vehicles/vorfeldaufsicht.bmp using Guid(adb0e8f3494738f4a9d8492e48027ec8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '048155af3d52abf05874c1d95fc305a6') in 0.005776 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Mobile_Airport/Textures_Vehicles/reifen_02_bump.bmp
+  artifactKey: Guid(30a18f9010249ef408387d672e880c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Vehicles/reifen_02_bump.bmp using Guid(30a18f9010249ef408387d672e880c67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ae636592d0ad9dcc72913f59b186d06') in 0.004445 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.948797 seconds.
+  path: Assets/Mobile_Airport/Textures_Trees/leaves_01.png
+  artifactKey: Guid(2953fd5c43e6a63489a0534d405c6117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Trees/leaves_01.png using Guid(2953fd5c43e6a63489a0534d405c6117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '393ee69b717475547c1d00496f9cc67c') in 0.008715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/Mobile_Airport/Textures_Trees/trunk_01.bmp
+  artifactKey: Guid(d2c4c3f2cad1d43439f72df2f1783db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Trees/trunk_01.bmp using Guid(d2c4c3f2cad1d43439f72df2f1783db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b7ec5c7c565c654af23a76a815191cc') in 0.006763 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Mobile_Airport/Textures_Trees/leaves_03.png
+  artifactKey: Guid(cccbcab54ba074141afc361b14677af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Trees/leaves_03.png using Guid(cccbcab54ba074141afc361b14677af3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce22e5c111df672ddb1a9c4b65c94629') in 0.006093 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Mobile_Airport/Textures_Trees/leaves_04.png
+  artifactKey: Guid(f12492c7be3c00b4ca4136a112ae112a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/Textures_Trees/leaves_04.png using Guid(f12492c7be3c00b4ca4136a112ae112a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeef4315b582fb3b8bb9528a5a0fb850') in 0.006101 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.405963 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Trees/trees.fbx
+  artifactKey: Guid(dfe562b2f00e6ae4c8363a3c4ca5c64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Trees/trees.fbx using Guid(dfe562b2f00e6ae4c8363a3c4ca5c64f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eedb722e50176c8ba01395f0812fbe0') in 0.163137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.511410 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/anflug_gleitwinkel_feuer.fbx
+  artifactKey: Guid(c02b6da5faa51da49b709e3b784c1075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/anflug_gleitwinkel_feuer.fbx using Guid(c02b6da5faa51da49b709e3b784c1075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41e59525c937d2f7d6993ff12c009541') in 0.045622 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/schrank_kleidung.fbx
+  artifactKey: Guid(ca3201f219de89840b1f46fc2408fc17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/schrank_kleidung.fbx using Guid(ca3201f219de89840b1f46fc2408fc17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd82c9379339b32f6a401f1790a429efc') in 0.016628 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/lagerhalle_002.fbx
+  artifactKey: Guid(e5900862d4b99864aaff9aae05a3b0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/lagerhalle_002.fbx using Guid(e5900862d4b99864aaff9aae05a3b0af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e7263118eb27119320f5bdb27b9e601') in 0.084106 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/tankstelle.fbx
+  artifactKey: Guid(1bc8d084b92553e4388ea5574c7d0b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/tankstelle.fbx using Guid(1bc8d084b92553e4388ea5574c7d0b83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '372ca32b1e29525b1804e98d9802f6d0') in 0.012283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/leuchttafel_mast_01.fbx
+  artifactKey: Guid(4a9b0a996c530464d81788dbc63534ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/leuchttafel_mast_01.fbx using Guid(4a9b0a996c530464d81788dbc63534ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b04213a6df9207b230a888408b6ceb') in 0.021011 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/bueroschraenke.fbx
+  artifactKey: Guid(3f536a58639baeb44bb3f2f0eafb5608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/bueroschraenke.fbx using Guid(3f536a58639baeb44bb3f2f0eafb5608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5352658badf3efb3f9c5a8cfb3ecf569') in 0.020745 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/tankbefuellungsanlage.fbx
+  artifactKey: Guid(9411586d167718f45b4b60089262ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/tankbefuellungsanlage.fbx using Guid(9411586d167718f45b4b60089262ccac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34c7a3ad3f125210d71207324d2cfa31') in 0.017448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/kameramast_01.fbx
+  artifactKey: Guid(88b5309cb048dc74e84147725c8e54f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/kameramast_01.fbx using Guid(88b5309cb048dc74e84147725c8e54f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1508ec068a3488a56b1f256af7771c8') in 0.024790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/anflugfeuersystem_atr_mast_kaefig.fbx
+  artifactKey: Guid(d8983bdc342fd3b4a9f3f3ffe24e2047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/anflugfeuersystem_atr_mast_kaefig.fbx using Guid(d8983bdc342fd3b4a9f3f3ffe24e2047) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb3070c9cc54c10bc83624842c81c39b') in 0.012061 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/heizungen.fbx
+  artifactKey: Guid(2ce9a0605cc08394a8d6fbed776d6b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/heizungen.fbx using Guid(2ce9a0605cc08394a8d6fbed776d6b38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2ac762466710a07b2af839b72674db2') in 0.033406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/tastatur.fbx
+  artifactKey: Guid(170040c43296e4f429979d8cc700aa99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/tastatur.fbx using Guid(170040c43296e4f429979d8cc700aa99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84c8688eab96df967051907db0264f0e') in 0.015047 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/betonblock_rund.fbx
+  artifactKey: Guid(232631c6d40c36841811ef42652e95bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/betonblock_rund.fbx using Guid(232631c6d40c36841811ef42652e95bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf6d13f421f691b98a36aac16606c0ff') in 0.012927 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/torfuehrungen.fbx
+  artifactKey: Guid(edcfca786dece884ea51af13bbc692b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/torfuehrungen.fbx using Guid(edcfca786dece884ea51af13bbc692b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a024622b1bc8e9a60311b2aec105dd0e') in 0.016874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/passagierterminal.fbx
+  artifactKey: Guid(a72e7b87afac63f4c95f32d5f1c0bd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/passagierterminal.fbx using Guid(a72e7b87afac63f4c95f32d5f1c0bd26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b124a0ef4d842a36adbe8797004fdb51') in 0.018721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/kleiderstaender.fbx
+  artifactKey: Guid(97f7932104bed184684224bd684e6b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/kleiderstaender.fbx using Guid(97f7932104bed184684224bd684e6b97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d6ebe69e8446006eba3a1bcbf68083c') in 0.013710 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/tore_anim.fbx
+  artifactKey: Guid(5e25d366b85d5164490b3aa59d8ef44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/tore_anim.fbx using Guid(5e25d366b85d5164490b3aa59d8ef44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '123cd2233111903c1b254ff4846747c2') in 0.003989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/wc_schilder.fbx
+  artifactKey: Guid(6f80929948a4efc4abe5f1f34042532b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/wc_schilder.fbx using Guid(6f80929948a4efc4abe5f1f34042532b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '073ab3337b15b33acc83f186ad5d0b26') in 0.020712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/leuchttafel_mast_02.fbx
+  artifactKey: Guid(59da36e6f3cbcdf44b8b28842e543b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/leuchttafel_mast_02.fbx using Guid(59da36e6f3cbcdf44b8b28842e543b70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '052b7f5173b7a402d71ac1e598bc1b2e') in 0.013902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/buerotische.fbx
+  artifactKey: Guid(a576491cc03c2624abb06ac9af958231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/buerotische.fbx using Guid(a576491cc03c2624abb06ac9af958231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a67486741f6179740ee126253593e7') in 0.043693 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/rutschstange.fbx
+  artifactKey: Guid(7e24b3b711a3c1349b3031712c6f7f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/rutschstange.fbx using Guid(7e24b3b711a3c1349b3031712c6f7f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e46937ceca06576dd92b35d70fea85') in 0.012843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000082 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/waschraeume_trennwaende.fbx
+  artifactKey: Guid(18ef37bd5a0bc1a438f48e991136de13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/waschraeume_trennwaende.fbx using Guid(18ef37bd5a0bc1a438f48e991136de13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '239099490f72372eb5044bd59afc7d9c') in 0.024459 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/aschenbecher.fbx
+  artifactKey: Guid(e37fa446004d89846adc80f8d6d82b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/aschenbecher.fbx using Guid(e37fa446004d89846adc80f8d6d82b33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6b6e8a50f4ebe29ba1814ef1e87fb81') in 0.016546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/tor.fbx
+  artifactKey: Guid(01d065922cdde22469439d5bca04fb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/tor.fbx using Guid(01d065922cdde22469439d5bca04fb2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd1d67f79008c35ea712a61a3f7a726a') in 0.017092 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/ruheraum.fbx
+  artifactKey: Guid(b1275dff189520b4d904fb55a39ada09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/ruheraum.fbx using Guid(b1275dff189520b4d904fb55a39ada09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfbba6d009e0eddec5042481efed7c19') in 0.023166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/flugzeughangar_klein.fbx
+  artifactKey: Guid(41cf3d56efe17c84596a5088f9e1050d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/flugzeughangar_klein.fbx using Guid(41cf3d56efe17c84596a5088f9e1050d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4222e75f946eeacd0060cdeda512953c') in 0.011448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/anflugfeuersystem_atr_mast.fbx
+  artifactKey: Guid(233ddf83f8f57c4418536200908a0282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/anflugfeuersystem_atr_mast.fbx using Guid(233ddf83f8f57c4418536200908a0282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2364ca97b0bc0da25ee1a78fd3696f51') in 0.044455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/frachtcontainer.fbx
+  artifactKey: Guid(c96b650a9e3a5204f8fd380772c5a2ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/frachtcontainer.fbx using Guid(c96b650a9e3a5204f8fd380772c5a2ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9edc349e3771f2445605e4dfc98e938') in 0.067971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/leuchtschild_taxiway.fbx
+  artifactKey: Guid(d655b3aecde1ba74886c23247a3db384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/leuchtschild_taxiway.fbx using Guid(d655b3aecde1ba74886c23247a3db384) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9173dd1c668281422f186ef5cdadb866') in 0.035896 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/karton_02.fbx
+  artifactKey: Guid(6910a6ef99816cd459b235c07ea57848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/karton_02.fbx using Guid(6910a6ef99816cd459b235c07ea57848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7276c54f818944a837d90d22742762b3') in 0.014149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Mobile_Airport/3dobjects_Props/tankstelle_boden.fbx
+  artifactKey: Guid(95c66a82402fda9408c6183d9343fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mobile_Airport/3dobjects_Props/tankstelle_boden.fbx using Guid(95c66a82402fda9408c6183d9343fb77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c1a9bce1a3590e72e36166f76846fb8') in 0.017267 seconds 
