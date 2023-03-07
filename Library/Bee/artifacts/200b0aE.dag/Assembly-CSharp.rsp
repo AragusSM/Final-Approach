@@ -369,6 +369,10 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.SpatialTracking.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
+"Assets/Mobile_Airport/Scripts/Befeuerungen.cs"
+"Assets/Mobile_Airport/Scripts/CameraFreeflight.cs"
+"Assets/Mobile_Airport/Scripts/Flare_01.cs"
+"Assets/Mobile_Airport/Scripts/TowerRadar.cs"
 "Assets/XRPlatformControllerSetup.cs"
 -langversion:9.0
 
