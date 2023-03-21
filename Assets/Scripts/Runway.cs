@@ -12,6 +12,11 @@ public class Runway : MonoBehaviour
     public Airplane plane;  // the airplane that is arriving here or is already here
     
     void Update() {
+        if (plane && (plane.status == PlaneStatus.TakingOff || plane.status == PlaneStatus.Returning) ) {
+            timeToRunway = 20.0f;
+            timeToLand = 15.0f;
+            open = true;
+        }
         if (!open && plane){
             if(timeToRunway <= 0.0f || timeToLand <= 0.0f){   // airplane has arrived at runway
                 plane.status = PlaneStatus.Runway;
@@ -22,10 +27,5 @@ public class Runway : MonoBehaviour
                 timeToLand -= Time.deltaTime; //count down
             }
         }
-        if (plane && (plane.status == PlaneStatus.TakingOff || plane.status == PlaneStatus.Returning) ) {
-            timeToRunway = 20.0f;
-            timeToLand = 15.0f;
-            open = true;
-        }
-    }
+    }    
 }

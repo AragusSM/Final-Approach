@@ -22,6 +22,8 @@ public class Terminal : MonoBehaviour
         Airplane newPlane = Instantiate(airplane, new Vector3(0, 1, 0), Quaternion.identity);
         newPlane._flightName = _planes.Count.ToString();    // currently the flight name is just the airplane number in the order it was spawned
         newPlane.status = PlaneStatus.Terminal;
+        newPlane.departure = true;
+        newPlane.terminal = this;
         _planes.Add(newPlane);
         Debug.Log("Created new plane: " + newPlane._flightName + ". There are " + _planes.Count + " planes in the list.");
     }

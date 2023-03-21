@@ -7,11 +7,43 @@ public class Airplane : MonoBehaviour
 {
     public string _flightName;  // flight identifier
     public PlaneStatus status;  // status of this plane
+
+    public bool departure; //  helps identify departing / arriving plane
+
+    public float timeToAir = 15.0f;
+
+    public float timeToTerminal = 20.0f;
+
+    public Terminal terminal; 
+
+    public Sky sky;    
+
+    // update final status depending on plane type
+    public void finalStatus() {
+        if (departure) {
+            this.status = PlaneStatus.TakingOff;
+        }
+        else {
+            this.status = PlaneStatus.Returning;
+        }
+    }
     
-    // airplane initialization
-    /*void Start() {
-        status = PlaneStatus.Terminal;
-    }*/
+    // if we are in the last leg of depart of arrive
+    // update plane status accordingly before destruction
+    void Update() {
+        if (this.status == PlaneStatus.TakingOff) {
+            timeToAir -= Time.deltaTime;
+        } else if (this.status == PlaneStatus.Returning) {
+            timeToTerminal -= Time.deltaTime;
+        }
+        if (this.status == PlaneStatus.TakingOff &&  timeToAir <= 0) {
+            terminal._planes.Remove(this);
+            Destroy(this);
+        } else if(this.status == PlaneStatus.Returning && timeToTerminal <= 0) {
+            sky._planes.Remove(this);
+            Destroy(this);
+        }
+    }
 }
 
 // enum of airplane statuses
