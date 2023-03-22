@@ -24,6 +24,13 @@ public class Sky : MonoBehaviour
         newPlane._flightName = _planes.Count.ToString();    // currently the flight name is just the airplane number in the order it was spawned
         newPlane.status = PlaneStatus.Circling;
         newPlane.departure = false;
+        newPlane.baseValue = 5; // temp
+        newPlane.priorityMultiplier = 1; // temp
+        newPlane.fuel = 50; //temp
+        // logic for assigning temp plane class: 
+        Random r = new Random(); // temp
+        newPlane.planeClass = (char) r.Next(96, 102); // temp
+        newPlane.waitingTime = 0;
         newPlane.sky = this;
         _planes.Add(newPlane);
         Debug.Log("Created new plane: " + newPlane._flightName + ". There are " + _planes.Count + " planes in the list.");
