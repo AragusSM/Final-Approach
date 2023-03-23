@@ -21639,6 +21639,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DepScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 6394153598685825307, guid: 519dadd350ea16444b839bfe5c40a5f7,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6973785524786184305, guid: 519dadd350ea16444b839bfe5c40a5f7,
         type: 3}
       propertyPath: m_Name
@@ -21648,7 +21653,7 @@ PrefabInstance:
         type: 3}
       propertyPath: button
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1594685409}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 519dadd350ea16444b839bfe5c40a5f7, type: 3}
 --- !u!1001 &494195287
@@ -70090,6 +70095,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591512102}
   m_Mesh: {fileID: 4300000, guid: e37fa446004d89846adc80f8d6d82b33, type: 3}
+--- !u!114 &1594685409 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1711782435558084217, guid: 519dadd350ea16444b839bfe5c40a5f7,
+    type: 3}
+  m_PrefabInstance: {fileID: 493812157}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 851a1a7d42668ec4580f184a3a52951f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1596724588
 PrefabInstance:
   m_ObjectHideFlags: 0
