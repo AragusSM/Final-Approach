@@ -13,16 +13,17 @@ public class DepartureButton : MonoBehaviour
     // renders the button text and color, updates every frame
     void Update()   // there is probably a better way to do this than every frame
     {
+        Debug.Log(terminal._planes.Count);
         if (terminal._planes.Count > buttonNumber) {    // only renders text if there is a plane's data to display
-            gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = terminal._planes[buttonNumber]._flightName + " " + terminal._planes[buttonNumber].status.ToString();
+            this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = terminal._planes[buttonNumber]._flightName + " " + terminal._planes[buttonNumber].status.ToString();
             if (buttonNumber == atc.selectedButton && atc.isDepartureButton) {
-                gameObject.GetComponent<TMPro.TextMeshProUGUI>().color = Color.green;   // color when a button is selected
+                this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().color = Color.green;   // color when a button is selected
             } else {
-                gameObject.GetComponent<TMPro.TextMeshProUGUI>().color = Color.black;   // default text color
+                this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().color = Color.black;   // default text color
             }
             
         } else {
-            gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+            this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "";
         }
     }
     

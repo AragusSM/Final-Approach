@@ -21634,10 +21634,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4958124028323567455, guid: 519dadd350ea16444b839bfe5c40a5f7,
+        type: 3}
+      propertyPath: m_Name
+      value: DepScreen
+      objectReference: {fileID: 0}
     - target: {fileID: 6973785524786184305, guid: 519dadd350ea16444b839bfe5c40a5f7,
         type: 3}
       propertyPath: m_Name
       value: ATC_logic
+      objectReference: {fileID: 0}
+    - target: {fileID: 8873303662650003967, guid: 519dadd350ea16444b839bfe5c40a5f7,
+        type: 3}
+      propertyPath: button
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 519dadd350ea16444b839bfe5c40a5f7, type: 3}

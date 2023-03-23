@@ -14,15 +14,15 @@ public class ArrivalButton : MonoBehaviour
     void Update()   // there is probably a better way to do this than every frame
     {
         if (sky._planes.Count > buttonNumber) {    // only renders text if there is a plane's data to display
-            gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = sky._planes[buttonNumber]._flightName + " " + sky._planes[buttonNumber].status.ToString();
+            this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = sky._planes[buttonNumber]._flightName + " " + sky._planes[buttonNumber].status.ToString();
             if (buttonNumber == atc.selectedButton && !atc.isDepartureButton) {
-                gameObject.GetComponent<TMPro.TextMeshProUGUI>().color = Color.green;   // color when a button is selected
+                this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().color = Color.green;   // color when a button is selected
             } else {
-                gameObject.GetComponent<TMPro.TextMeshProUGUI>().color = Color.black;   // default text color
+                this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().color = Color.black;   // default text color
             }
             
         } else {
-            gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+            this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "";
         }
     }
 
