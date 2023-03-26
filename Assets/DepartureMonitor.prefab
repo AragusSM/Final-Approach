@@ -1148,6 +1148,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DepartureButton
       objectReference: {fileID: 0}
+    - target: {fileID: 1881281199974065772, guid: a3d7f2580d8e6c4489ee37761e936fd7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3482679072721152380, guid: a3d7f2580d8e6c4489ee37761e936fd7,
         type: 3}
       propertyPath: m_Pivot.x

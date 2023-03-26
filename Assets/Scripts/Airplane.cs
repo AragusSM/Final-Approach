@@ -40,6 +40,13 @@ public class Airplane : MonoBehaviour
         //remove this plane along with the button associated with it
         if (this.status == PlaneStatus.TakingOff &&  timeToAir <= 0) {
             terminal._planes.Remove(this);
+            //turn off the panel
+            GameObject g = ATC.FindInActiveObjectByName("FlightDisplay");
+            string displayname = ATC.FindInActiveObjectByName("FlightNumberText").gameObject.GetComponent<TMPro.TextMeshProUGUI>().text;
+            if(displayname.Equals(this._flightName)){
+               g.SetActive(false); 
+            }
+            //delete the button and airplane
             DepartureButton d = terminal._buttons[_flightIndex];
             terminal._buttons.Remove(d);
             Destroy(d);
@@ -49,6 +56,13 @@ public class Airplane : MonoBehaviour
 
         } else if(this.status == PlaneStatus.Returning && timeToTerminal <= 0) {
             sky._planes.Remove(this);
+            //turn off the panel
+            GameObject g = ATC.FindInActiveObjectByName("FlightDisplay");
+            string displayname = ATC.FindInActiveObjectByName("FlightNumberText").gameObject.GetComponent<TMPro.TextMeshProUGUI>().text;
+            if(displayname.Equals(this._flightName)){
+               g.SetActive(false); 
+            }
+            //delete the button and airplane
             ArrivalButton a = sky._buttons[_flightIndex];
             sky._buttons.Remove(a);
             Destroy(a);

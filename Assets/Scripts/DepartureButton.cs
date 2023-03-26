@@ -13,20 +13,21 @@ public class DepartureButton : MonoBehaviour
     // renders the button text and color, updates every frame
     void Update()   // there is probably a better way to do this than every frame
     {
-        Debug.Log(terminal._planes.Count);
-        if (terminal._planes.Count > buttonNumber) {    // only renders text if there is a plane's data to display
-            this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = terminal._planes[buttonNumber]._flightIndex + " " + terminal._planes[buttonNumber].status.ToString();
-            if (buttonNumber == atc.selectedButton && atc.isDepartureButton) {
-                this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().color = Color.green;   // color when a button is selected
-            } else {
-                this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().color = Color.black;   // default text color
-            }
+        if(terminal != null && atc != null){
+            if (terminal._planes.Count > buttonNumber) {    // only renders text if there is a plane's data to display
+                this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = terminal._planes[buttonNumber]._flightIndex + " " + terminal._planes[buttonNumber].status.ToString();
+                if (buttonNumber == atc.selectedButton && atc.isDepartureButton) {
+                    this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().color = Color.green;   // color when a button is selected
+                } else {
+                    this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().color = Color.black;   // default text color
+                }
             
-        } else {
-            this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+            } else {
+                this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "";
+            }
+            RectTransform rt = this.GetComponent<RectTransform>();
+            rt.anchoredPosition = new Vector2(0.0f, 135.0f - (18f)*buttonNumber); //change the value inside here if you change your buttons
         }
-        RectTransform rt = this.GetComponent<RectTransform>();
-        rt.anchoredPosition = new Vector2(0.0f, 135.0f - (18f)*buttonNumber); //change the value inside here if you change your buttons
     }
 
     
