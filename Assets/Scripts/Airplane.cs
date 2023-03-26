@@ -6,6 +6,7 @@ using UnityEngine;
 public class Airplane : MonoBehaviour
 {
     public string _flightName;  // flight identifier
+    public int _flightIndex;
     public PlaneStatus status;  // status of this plane
 
     public bool departure; //  helps identify departing / arriving plane
@@ -36,12 +37,42 @@ public class Airplane : MonoBehaviour
         } else if (this.status == PlaneStatus.Returning) {
             timeToTerminal -= Time.deltaTime;
         }
+        //remove this plane along with the button associated with it
         if (this.status == PlaneStatus.TakingOff &&  timeToAir <= 0) {
             terminal._planes.Remove(this);
+            DepartureButton d = terminal._buttons[_flightIndex];
+            terminal._buttons.Remove(d);
+            Destroy(d);
             Destroy(this);
+            //update the indices of the other buttons and planes
+            UpdatePlanes(terminal);
+
         } else if(this.status == PlaneStatus.Returning && timeToTerminal <= 0) {
             sky._planes.Remove(this);
+            ArrivalButton a = sky._buttons[_flightIndex];
+            sky._buttons.Remove(a);
+            Destroy(a);
             Destroy(this);
+            //update the indices of the other buttons and planes
+            UpdatePlanes(sky);
+        }
+    }
+
+    void UpdatePlanes(Terminal t){
+        for(int i = 0; i < t._planes.Count; i++){
+            t._planes[i]._flightIndex = i;
+        }
+        for(int i = 0; i < t._buttons.Count; i++){
+            t._buttons[i].buttonNumber = i;
+        }
+    }
+
+    void UpdatePlanes(Sky s){
+        for(int i = 0; i < s._planes.Count; i++){
+            s._planes[i]._flightIndex = i;
+        }
+        for(int i = 0; i < s._buttons.Count; i++){
+            s._buttons[i].buttonNumber = i;
         }
     }
 }

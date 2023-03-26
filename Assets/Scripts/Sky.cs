@@ -27,6 +27,7 @@ public class Sky : MonoBehaviour
     void createPlane() {
         Airplane newPlane = Instantiate(airplane, new Vector3(0, 1, 0), Quaternion.identity);
         newPlane._flightName = _planes.Count.ToString();    // currently the flight name is just the airplane number in the order it was spawned
+        newPlane._flightIndex = _planes.Count;
         newPlane.status = PlaneStatus.Circling;
         newPlane.departure = false;
         newPlane.sky = this;
@@ -43,11 +44,11 @@ public class Sky : MonoBehaviour
         newbutton.buttonNumber = _planes.Count;
         //change the position of the button and add the onclick function
         rt.localPosition = new Vector3(0.0f, 0.0f, 0.0f);
-        rt.anchoredPosition = new Vector2(0.0f, 135.0f - (18f)*_buttons.Count); //change the value inside here if you change your buttons
         newbutton.transform.Rotate(new Vector3(25.0f, 180.0f, 0.0f));
         newbutton.GetComponent<Button>().onClick.AddListener(delegate {atc.selectArrivingAirplane(newbutton.buttonNumber); });
         _buttons.Add(newbutton);
     }
+
 
 }
 

@@ -15,7 +15,7 @@ public class DepartureButton : MonoBehaviour
     {
         Debug.Log(terminal._planes.Count);
         if (terminal._planes.Count > buttonNumber) {    // only renders text if there is a plane's data to display
-            this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = terminal._planes[buttonNumber]._flightName + " " + terminal._planes[buttonNumber].status.ToString();
+            this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = terminal._planes[buttonNumber]._flightIndex + " " + terminal._planes[buttonNumber].status.ToString();
             if (buttonNumber == atc.selectedButton && atc.isDepartureButton) {
                 this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().color = Color.green;   // color when a button is selected
             } else {
@@ -25,6 +25,9 @@ public class DepartureButton : MonoBehaviour
         } else {
             this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "";
         }
+        RectTransform rt = this.GetComponent<RectTransform>();
+        rt.anchoredPosition = new Vector2(0.0f, 135.0f - (18f)*buttonNumber); //change the value inside here if you change your buttons
     }
+
     
 }

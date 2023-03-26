@@ -6,15 +6,15 @@ using UnityEngine;
 public class Runway : MonoBehaviour
 {
     public bool open; // true if this runway can be taxiied to (there is not another plane taxiing here or already here)
-    public float timeToRunway = 20.0f;  // time it takes for an airplane to get here
-    public float timeToLand = 15.0f; //time it takes to land
+    public float timeToRunway = 10.0f;  // time it takes for an airplane to get here
+    public float timeToLand = 5.0f; //time it takes to land
 
     public Airplane plane;  // the airplane that is arriving here or is already here
     
     void Update() {
         if (plane && (plane.status == PlaneStatus.TakingOff || plane.status == PlaneStatus.Returning) ) {
-            timeToRunway = 20.0f;
-            timeToLand = 15.0f;
+            timeToRunway = 10.0f;
+            timeToLand = 5.0f;
             open = true;
         }
         if (!open && plane){
