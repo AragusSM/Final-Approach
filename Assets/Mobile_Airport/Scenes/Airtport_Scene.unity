@@ -17587,6 +17587,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 499878865777793507, guid: 20593ea3d083a7d4c9f24b29c745dc2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1436015299082101483, guid: 20593ea3d083a7d4c9f24b29c745dc2f,
         type: 3}
       propertyPath: timeToLand
@@ -17601,6 +17606,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ATC_logic
+      objectReference: {fileID: 0}
+    - target: {fileID: 2058421336971976929, guid: 20593ea3d083a7d4c9f24b29c745dc2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3133509280402011400, guid: 20593ea3d083a7d4c9f24b29c745dc2f,
         type: 3}
