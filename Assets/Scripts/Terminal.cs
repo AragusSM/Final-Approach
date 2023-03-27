@@ -30,6 +30,12 @@ public class Terminal : MonoBehaviour
         newPlane._flightIndex = _planes.Count;
         newPlane.status = PlaneStatus.Terminal;
         newPlane.departure = true;
+        newPlane.baseValue = 5; // temp
+        newPlane.priorityMultiplier = 1; //temp
+        newPlane.fuelLevel = 100; // temp
+         // logic for assigning temp plane class: 
+        newPlane.planeClass = (char) Random.Range(96, 102); // temp
+        newPlane.waitingTime = 0;
         newPlane.terminal = this;
         _planes.Add(newPlane);
         Debug.Log("Created new plane: " + newPlane._flightName + ". There are " + _planes.Count + " planes in the list.");
