@@ -54,9 +54,16 @@ MonoBehaviour:
   priorityMultiplier: 0
   fuelLevel: 0
   waitingTime: 0
+  waitingTimeSeconds: 0
   planeClass: 0
+  planeType: 
+  planeAsset: 
+  passengersOnBoard: 0
+  priority: 
+  atcRef: {fileID: 0}
+  Beep: {fileID: 0}
   timeToAir: 15
-  timeToTerminal: 20
+  timeToTerminal: 10
   terminal: {fileID: 0}
   sky: {fileID: 0}
 --- !u!95 &4842319022790888053
