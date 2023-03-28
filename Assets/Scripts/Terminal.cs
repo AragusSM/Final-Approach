@@ -38,6 +38,7 @@ public class Terminal : MonoBehaviour
         }
 
         PlaneData chosenPlane = planeData[index];
+        atc.chosenPlanes.Add(index);
         if(chosenPlane.iata.Equals("N/A")) {
             newPlane._flightName = chosenPlane.callSign + chosenPlane.adIATA; 
         }
@@ -63,7 +64,8 @@ public class Terminal : MonoBehaviour
             newPlane.priority = "Normal";
         }
 
-        newPlane.fuelLevel = chosenPlane.fuel;
+        //airplanes taking off should have a greater fuel level. Add 50%.
+        newPlane.fuelLevel = Mathf.Min((chosenPlane.fuel + 50.0f), 100.0f);
         newPlane.planeClass = chosenPlane.planeSize;
         newPlane.planeType = chosenPlane.planeType;
         newPlane.passengersOnBoard = chosenPlane.maxPassengers;

@@ -52,7 +52,7 @@ public class ATC : MonoBehaviour
         GameObject flightText = panel.transform.Find("FlightNumberText").gameObject;
         GameObject fuelText = panel.transform.Find("FuelText").gameObject;
         GameObject statusText = panel.transform.Find("StatusText").gameObject;
-        GameObject waitText = panel.transform.Find("FlightNumberText").gameObject;
+        GameObject waitText = panel.transform.Find("WaitText").gameObject;
         GameObject description = panel.transform.Find("Description").gameObject;
         panelElements = new GameObject[5];
         panelElements[0] = flightText;
@@ -142,8 +142,10 @@ public class ATC : MonoBehaviour
                 selectedButton = -1;
                 if(selectedAirplane.status == PlaneStatus.Terminal){
                     selectedAirplane.status = PlaneStatus.Taxiing;
+                    selectedAirplane.GetComponent<Animator>().Play("Taxiing");
                 }else{
                     selectedAirplane.status = PlaneStatus.Landing;
+                    selectedAirplane.GetComponent<Animator>().Play("Landing");
                 }
                 runway.plane = selectedAirplane;
                 runway.open = false;
@@ -171,7 +173,10 @@ public class ATC : MonoBehaviour
     void Update(){
         if(selectedAirplane != null){
             panelElements[0].GetComponent<TMPro.TextMeshProUGUI>().text = selectedAirplane._flightName;
+            int Fuel = (int) selectedAirplane.fuelLevel;
+            panelElements[1].GetComponent<TMPro.TextMeshProUGUI>().text = Fuel.ToString() + "%";
             panelElements[2].GetComponent<TMPro.TextMeshProUGUI>().text = selectedAirplane.status.ToString();
+            panelElements[3].GetComponent<TMPro.TextMeshProUGUI>().text = selectedAirplane.waitingTimeSeconds.ToString();
             panelElements[4].GetComponent<TMPro.TextMeshProUGUI>().text = "Passengers: " + selectedAirplane.passengersOnBoard + ", PlaneType: " + selectedAirplane.planeType + ", Priority: " + selectedAirplane.priority;
         }
     }

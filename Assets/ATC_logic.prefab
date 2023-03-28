@@ -857,6 +857,7 @@ MonoBehaviour:
   sky: {fileID: 584892480621908989}
   selectedButton: -1
   isDepartureButton: 1
+  textAssetData: {fileID: 0}
 --- !u!1 &7320843780629214381
 GameObject:
   m_ObjectHideFlags: 0

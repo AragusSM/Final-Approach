@@ -13,7 +13,8 @@ public class Airplane : MonoBehaviour
     public int baseValue; // base value based on size
     public int priorityMultiplier; // priority 1 (normal) to 3 (highest)
     public float fuelLevel; // 100 for full, 0 for empty
-    public int waitingTime; // the time in secs that this plane has waited
+    public float waitingTime;
+    public int waitingTimeSeconds; // the time in secs that this plane has waited
     public char planeClass; // char that represents size / class of plane
     public string planeType; // string that represents the type of plane (i.e Boeing 747)
     public string planeAsset; // string that represents the asset name of the plane
@@ -43,7 +44,7 @@ public class Airplane : MonoBehaviour
 
     // temp values
     public float timeToAir = 15.0f;
-    public float timeToTerminal = 20.0f;
+    public float timeToTerminal = 10.0f;
 
     public Terminal terminal; 
     public Sky sky;    
@@ -62,9 +63,10 @@ public class Airplane : MonoBehaviour
     // if we are in the last leg of depart of arrive
     // update plane status accordingly before destruction
     void Update() {
-        waitingTime += (int) Time.deltaTime;
-        // update fuel value if in air and depending on fuel class
-        if (this.status == PlaneStatus.Circling || this.status == PlaneStatus.Landing) {
+        waitingTime += Time.deltaTime;
+        waitingTimeSeconds = (int) waitingTime;
+        // update fuel value if in air and depending on fuel class. Also note that the airplane consumes fuel if it is moving! (not at terminal)
+        if (this.status != PlaneStatus.Terminal) {
             fuelLevel -= Time.deltaTime * fuelMap[this.planeClass];
         }
         if (this.status == PlaneStatus.TakingOff) {
@@ -75,7 +77,7 @@ public class Airplane : MonoBehaviour
         //remove this plane along with the button associated with it
         if (this.status == PlaneStatus.TakingOff &&  timeToAir <= 0) {
             terminal._planes.Remove(this);
-            GameManager.score += baseValue - ((waitingTime - LEEWAY) * priorityMultiplier);
+            GameManager.score += baseValue - ((waitingTimeSeconds - LEEWAY) * priorityMultiplier);
             //turn off the panel
             GameObject g = ATC.FindInActiveObjectByName("FlightDisplay");
             string displayname = ATC.FindInActiveObjectByName("FlightNumberText").gameObject.GetComponent<TMPro.TextMeshProUGUI>().text;
@@ -87,13 +89,14 @@ public class Airplane : MonoBehaviour
             terminal._buttons.Remove(d);
             this.atcRef.selectedButton = -1;
             Destroy(d);
+            Destroy(this.gameObject);
             Destroy(this);
             //update the indices of the other buttons and planes
             UpdatePlanes(terminal);
 
         } else if(this.status == PlaneStatus.Returning && timeToTerminal <= 0) {
             sky._planes.Remove(this);
-            GameManager.score += baseValue - ((waitingTime - LEEWAY) * priorityMultiplier);
+            GameManager.score += baseValue - ((waitingTimeSeconds - LEEWAY) * priorityMultiplier);
             //turn off the panel
             GameObject g = ATC.FindInActiveObjectByName("FlightDisplay");
             string displayname = ATC.FindInActiveObjectByName("FlightNumberText").gameObject.GetComponent<TMPro.TextMeshProUGUI>().text;

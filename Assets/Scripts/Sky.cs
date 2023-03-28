@@ -38,6 +38,7 @@ public class Sky : MonoBehaviour
         }
 
         PlaneData chosenPlane = planeData[index];
+        atc.chosenPlanes.Add(index);
 
         if(chosenPlane.iata.Equals("N/A")) {
             newPlane._flightName = chosenPlane.callSign + chosenPlane.adIATA; 

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8157038462320671845}
   - component: {fileID: 8936030728014859960}
+  - component: {fileID: 4842319022790888053}
   m_Layer: 0
   m_Name: AirplaneGameObject
   m_TagString: Untagged
@@ -28,7 +29,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7131730988676526258}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -45,4 +47,98 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _flightName: 
-  _departure: 0
+  _flightIndex: 0
+  status: 0
+  departure: 0
+  baseValue: 0
+  priorityMultiplier: 0
+  fuelLevel: 0
+  waitingTime: 0
+  planeClass: 0
+  timeToAir: 15
+  timeToTerminal: 20
+  terminal: {fileID: 0}
+  sky: {fileID: 0}
+--- !u!95 &4842319022790888053
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5947701833104242228}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e56209ff829efc349966633a21cf698a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!1001 &7131730988676393512
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8157038462320671845}
+    m_Modifications:
+    - target: {fileID: 100026, guid: b4cb217dc2587c648bf18779f0cdbe0f, type: 3}
+      propertyPath: m_Name
+      value: passagiermaschine_707_static
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b4cb217dc2587c648bf18779f0cdbe0f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b4cb217dc2587c648bf18779f0cdbe0f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b4cb217dc2587c648bf18779f0cdbe0f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b4cb217dc2587c648bf18779f0cdbe0f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b4cb217dc2587c648bf18779f0cdbe0f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b4cb217dc2587c648bf18779f0cdbe0f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b4cb217dc2587c648bf18779f0cdbe0f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b4cb217dc2587c648bf18779f0cdbe0f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b4cb217dc2587c648bf18779f0cdbe0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b4cb217dc2587c648bf18779f0cdbe0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400026, guid: b4cb217dc2587c648bf18779f0cdbe0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4cb217dc2587c648bf18779f0cdbe0f, type: 3}
+--- !u!4 &7131730988676526258 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400026, guid: b4cb217dc2587c648bf18779f0cdbe0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7131730988676393512}
+  m_PrefabAsset: {fileID: 0}

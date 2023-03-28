@@ -11,6 +11,12 @@ public class RunwayButton : MonoBehaviour
     public void runwayButtonPress() {
         if (active) {
             runWay.plane.finalStatus();
+            if(runWay.plane.departure){
+                runWay.plane.GetComponent<Animator>().Play("TakeOff");
+            }else{
+                runWay.plane.GetComponent<Animator>().Play("Returning");
+            }
+            
         }
     }
 
