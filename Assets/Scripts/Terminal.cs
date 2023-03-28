@@ -25,9 +25,6 @@ public class Terminal : MonoBehaviour
 
     // creates an airplane, initializes it, and adds to the list
     void createPlane() {
-        
-
-
          // if user has chosen all planes, don't add any more planes => game ends:
         if(atc.chosenPlanes.Count == atc.allPlaneData.Count){
             return;
@@ -52,15 +49,18 @@ public class Terminal : MonoBehaviour
         newPlane.departure = true;
         newPlane.baseValue = newPlane.basePointMap[chosenPlane.planeSize];
         
-        // assign priority multiplier based on priority strings
+        
         if(chosenPlane.priority.Equals("Priority")){
             newPlane.priorityMultiplier = 2;
+            newPlane.priority = "Higher Priority";
         }
         else if(chosenPlane.priority.Equals("Emergency")){
             newPlane.priorityMultiplier = 3;
+            newPlane.priority = "Emergency";
         }
         else{
             newPlane.priorityMultiplier = 1;
+            newPlane.priority = "Normal";
         }
 
         newPlane.fuelLevel = chosenPlane.fuel;

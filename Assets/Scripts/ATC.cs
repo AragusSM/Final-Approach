@@ -172,6 +172,7 @@ public class ATC : MonoBehaviour
         if(selectedAirplane != null){
             panelElements[0].GetComponent<TMPro.TextMeshProUGUI>().text = selectedAirplane._flightName;
             panelElements[2].GetComponent<TMPro.TextMeshProUGUI>().text = selectedAirplane.status.ToString();
+            panelElements[4].GetComponent<TMPro.TextMeshProUGUI>().text = "Passengers: " + selectedAirplane.passengersOnBoard + ", PlaneType: " + selectedAirplane.planeType + ", Priority: " + selectedAirplane.priority;
         }
     }
 

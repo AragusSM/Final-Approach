@@ -18,6 +18,7 @@ public class Airplane : MonoBehaviour
     public string planeType; // string that represents the type of plane (i.e Boeing 747)
     public string planeAsset; // string that represents the asset name of the plane
     public int passengersOnBoard; // number of passengers on board
+    public string priority; // priority of the plane as a string
 
     public ATC atcRef; // reference to the ATC
 
