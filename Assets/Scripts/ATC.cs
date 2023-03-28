@@ -66,7 +66,7 @@ public class ATC : MonoBehaviour
 
     }
 
-
+    // read plane data from csv file
     public void readPlaneData(string fileName) {
         StreamReader strReader = new StreamReader(fileName);
         bool endOfFile = false; 

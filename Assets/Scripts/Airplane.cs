@@ -15,6 +15,9 @@ public class Airplane : MonoBehaviour
     public float fuelLevel; // 100 for full, 0 for empty
     public int waitingTime; // the time in secs that this plane has waited
     public char planeClass; // char that represents size / class of plane
+    public string planeType; // string that represents the type of plane (i.e Boeing 747)
+    public string planeAsset; // string that represents the asset name of the plane
+    public int passengersOnBoard; // number of passengers on board
 
     public ATC atcRef; // reference to the ATC
 

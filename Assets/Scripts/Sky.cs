@@ -43,7 +43,9 @@ public class Sky : MonoBehaviour
         newPlane._flightIndex = _planes.Count;
         newPlane.status = PlaneStatus.Circling;
         newPlane.departure = false;
-        newPlane.baseValue = newPlane.basePointMap[chosenPlane.planeType[0]]; 
+        newPlane.baseValue = newPlane.basePointMap[chosenPlane.planeSize];
+        
+        // assign priority multiplier based on priority strings
         if(chosenPlane.priority.Equals("Priority")){
             newPlane.priorityMultiplier = 2;
         }
@@ -55,8 +57,10 @@ public class Sky : MonoBehaviour
         }
 
         newPlane.fuelLevel = chosenPlane.fuel;
-        // logic for assigning temp plane class: 
-        newPlane.planeClass = chosenPlane.planeSize; 
+        newPlane.planeClass = chosenPlane.planeSize;
+        newPlane.planeType = chosenPlane.planeType;
+        newPlane.passengersOnBoard = chosenPlane.maxPassengers;
+        newPlane.planeAsset = chosenPlane.planeAsset; 
         newPlane.waitingTime = 0;
         newPlane.sky = this;
         newPlane.atcRef = this.atc;
