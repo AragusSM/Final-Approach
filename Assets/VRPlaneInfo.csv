@@ -1,0 +1,82 @@
+Air Force ONE,N/A,N/A,Andrews Air Force Base,AFB,Boeing 747,Priority,28,230,passagiermaschine_747_static,416,A,3,20,20,15,15
+Korean Air 539,KAL539,KE539,Seoul,ICN,Boeing 747,N/A,36,-325,passagiermaschine_747_static,416,A,3,20,20,15,15
+Lufthansa 419,DLH419,LH419,Frankfurt,FRA,Boeing 747,N/A,25,120,passagiermaschine_747_static,416,A,3,20,20,15,15
+Qatar Airways 8830,QTR8830,QR8830,Melbourne,MEL,Boeing 747,N/A,38,215,passagiermaschine_747_static,416,A,3,20,20,15,15
+Cathay Pacific 3081,CPA3081,CX3081,Hong Kong,HKG,Boeing 747,N/A,36,295,passagiermaschine_747_static,416,A,3,20,20,15,15
+Singapore Airlines 7290,SIA7290,SQ7290,Singapore,SIN,Boeing 747,N/A,6,-3,passagiermaschine_747_static,416,A,3,20,20,15,15
+Air Force ABYSS,N/A,N/A,Ramstein Air Base,RMS,Lockheed C-130,Priority,17,-498,frachtmaschine_antonov_static,124,A,3,20,20,15,15
+Air Force KILO,N/A,N/A,RAF Mildenhall,MHZ,Lockheed C-130,Priority,7,-529,frachtmaschine_antonov_static,124,A,3,20,20,15,15
+Air Force SCRON,N/A,N/A,Peterson Air Force Base,COS,Lockheed C-130,Priority,38,-199,frachtmaschine_antonov_static,124,A,3,20,20,15,15
+Air Force EDGAR,N/A,N/A,Bagram Air Base,OAI,Lockheed C-130,Priority,22,-509,frachtmaschine_antonov_static,124,A,3,20,20,15,15
+Icelandair 614,ICE614,FI614,New York JFK,JFK,Boeing 757,N/A,17,77,frachtmaschine_757_static,239,B,4,20,20,15,15
+Delta 937,DAL937,DL937,Denver,DEN,Boeing 757,N/A,52,272,frachtmaschine_757_static,239,B,4,20,20,15,15
+United 1976,UAL1976,UA1976,San Francisco,SFO,Boeing 757,N/A,47,89,frachtmaschine_757_static,239,B,4,20,20,15,15
+Delta 947,DAL947,DL947,Atlanta,ATL,Boeing 757,N/A,36,231,frachtmaschine_757_static,239,B,4,20,20,15,15
+United 1432,UAL1432,UA1432,Los Angeles,LAX,Boeing 757,N/A,18,-489,frachtmaschine_757_static,239,B,4,20,20,15,15
+United 714,UAL714,UA714,Chicago,ORD,Boeing 757,N/A,12,-124,frachtmaschine_757_static,239,B,4,20,20,15,15
+United 724,UAL724,UA724,Honolulu,HNL,Boeing 757,N/A,45,155,frachtmaschine_757_static,239,B,4,20,20,15,15
+Delta 2120,DAL2120,DL2120,Las Vegas,LAS,Boeing 757,N/A,11,88,frachtmaschine_757_static,239,B,4,20,20,15,15
+United 2310,UAL2310,UA2310,Boston,BOS,Boeing 757,N/A,47,-428,frachtmaschine_757_static,239,B,4,20,20,15,15
+United 8116,UAL8116,UA8116,Newark,EWR,Boeing 757,N/A,22,-104,frachtmaschine_757_static,239,B,4,20,20,15,15
+Delta 1426,DAL1426,DL1426,Minneapolis,MSP,Boeing 757,N/A,29,-297,frachtmaschine_757_static,239,B,4,20,20,15,15
+Delta 1226,DAL1226,DL1226,Detroit,DTW,Boeing 757,N/A,5,-296,frachtmaschine_757_static,239,B,4,20,20,15,15
+easyJet Switzerland 1417,EZS1417,DS1417,Geneva,GVA,Airbus A320,N/A,21,160,passagiermaschine_a320_static,180,C,5,20,20,15,15
+IndiGO 5306,IGO5306,6E5306,Chennai,MAA,Airbus A320,N/A,19,-564,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Austrian Airlines 295,AUA295,OS295,Vienna,VIE,Airbus A320,N/A,44,-476,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Eurowings 8054,EWG8054,EW8054,Berlin,BER,Airbus A320,N/A,46,94,passagiermaschine_a320_static,180,C,5,20,20,15,15
+JetBlue 900,JBU900,B6900,Fort Lauderdale,FLL,Airbus A320,N/A,37,198,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Iberia Express 3925,IBS3925,I23925,Palma de Mallorca ,PMI,Airbus A320,N/A,18,-376,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Spirit 3374,NKS3374,NK3374,Memphis,MEM,Airbus A320,Emergency,10,189,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Frontier 2510,FFT2510,F92510,Tampa,TPA,Airbus A320,N/A,9,102,passagiermaschine_a320_static,180,C,5,20,20,15,15
+American Airlines 1686,AAL1686,AA1686,Phoenix,PHX,Airbus A320,N/A,12,-454,passagiermaschine_a320_static,180,C,5,20,20,15,15
+American Airlines 2632,AAL2632,AA2632,Washington Dulles,IAD,Airbus A320,N/A,27,287,passagiermaschine_a320_static,180,C,5,20,20,15,15
+United 539,UAL539,UA539,San Antonio,SAT,Airbus A320,N/A,46,-417,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Delta 2388,DAL2388,DL2388,Seattle,SEA,Airbus A320,N/A,21,86,passagiermaschine_a320_static,180,C,5,20,20,15,15
+JetBlue 1284,JBU1284,B61284,New York JFK,JFK,Airbus A320,N/A,43,-433,passagiermaschine_a320_static,180,C,5,20,20,15,15
+JetBlue 399,JBU399,B6399,LaGuardia,LGA,Airbus A320,N/A,21,-144,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Nile Air 141,NIA141,NP141,Cairo,CAI,Airbus A320,N/A,6,156,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Allegiant Air 2278,AAY2278,G42278,Phoenix,IWA,Airbus A320,N/A,24,-256,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Delta 1543,DAL1543,DL1543,Dallas,DFW,Airbus A320,N/A,44,-514,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Avianca 127,AVA127,AV127,Bogota,BOG,Airbus A320,N/A,11,39,passagiermaschine_a320_static,180,C,5,20,20,15,15
+JetBlue 2626,JBU2626,B62626,Raleigh-Durham,RDU,Airbus A320,N/A,53,-565,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Delta 2350,DAL2350,DL2350,Indianapolis,IND,Airbus A320,N/A,37,-160,passagiermaschine_a320_static,180,C,5,20,20,15,15
+IndiGO 702,IGO702,6E702,Bengaluru,BLR,Airbus A320,N/A,24,-42,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Qatar Airways 235,QTR235,QR235,Doha,DOH,Airbus A320,N/A,12,-89,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Air Arabia 482,ABY482,G9482,Sharjah,SHJ,Airbus A320,N/A,11,-2,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Jetstar Asia 243,JSA243,3K243,Singapore Changi,SIN,Airbus A320,N/A,5,-410,passagiermaschine_a320_static,180,C,5,20,20,15,15
+Delta 1712,DAL1712,DL1712,Salt Lake City,SLC,Airbus A320,N/A,47,-373,passagiermaschine_a320_static,180,C,5,20,20,15,15
+MEDEVAC N400SC,N/A,N/A,Boston Logan,BOS,Fairchild FH-227,Priority,10,-231,privatjet2_static,52,E,9,20,20,15,15
+MEDEVAC N782AL,N/A,N/A,Steamboat Springs,SBS,Fairchild FH-227,Priority,11,-293,privatjet2_static,52,E,9,20,20,15,15
+N711Z,N/A,N/A,North Little Rock,ORK,Cessna 172,N/A,23,-568,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N8949U,N/A,N/A,New Richmond,RNH,Beechcraft Bonanza,N/A,39,-105,sportflugzeug_beech_static,6,F,10,20,20,15,15
+N7368R,N/A,N/A,St. George,SGU,Beechcraft Bonanza,N/A,17,-412,sportflugzeug_beech_static,6,F,10,20,20,15,15
+N168NL,N/A,N/A,Provo,PVU,Beechcraft Bonanza,N/A,29,215,sportflugzeug_beech_static,6,F,10,20,20,15,15
+N168NL,N/A,N/A,Burbank,BUR,Beechcraft Bonanza,N/A,10,-347,sportflugzeug_beech_static,6,F,10,20,20,15,15
+N733SW,N/A,N/A,Cedar City,CDC,Beechcraft Bonanza,N/A,56,-555,sportflugzeug_beech_static,6,F,10,20,20,15,15
+VH-DDC,N/A,N/A,Coffs Harbour,CFS,Beechcraft Bonanza,N/A,34,-584,sportflugzeug_beech_static,6,F,10,20,20,15,15
+GTX510,N/A,N/A,El Paso,ELP,Beechcraft Bonanza,N/A,11,-465,sportflugzeug_beech_static,6,F,10,20,20,15,15
+GTX510,N/A,N/A,Tulsa,TUL,Beechcraft Bonanza,N/A,30,-248,sportflugzeug_beech_static,6,F,10,20,20,15,15
+N789J,N/A,N/A,Guntersville,8A1,Beechcraft Bonanza,N/A,10,-16,sportflugzeug_beech_static,6,F,10,20,20,15,15
+N67443,N/A,N/A,Hubler Field,ID00,Cessna 172,N/A,51,-380,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N46953,N/A,N/A,North Perry,HWO,Cessna 172,N/A,19,220,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N48068,N/A,N/A,South Valley,U42,Cessna 172,N/A,17,-371,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N95787,N/A,N/A,Dane County,MSN,Cessna 172,N/A,49,-465,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N48SU,N/A,N/A,Griffith-Merrillville,05C,Cessna 172,N/A,50,-443,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N49469,N/A,N/A,Fort Lauderdale Exec,FXR,Cessna 172,N/A,21,-581,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N340SX,N/A,N/A,Elbert County-Patz FId,EBA,Cessna 172,Emergency,56,46,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N4786P,N/A,N/A,Daugherty Field,LGB,Cessna 172,N/A,37,45,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N4852P,N/A,N/A,Southwest Georgia,ABY,Cessna 172,N/A,22,-202,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N5335P,N/A,N/A,Hayward Exec,HWD,Cessna 172,N/A,20,-256,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N5151 B,N/A,N/A,Santa Clara County,RHV,Cessna 172,N/A,16,51,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N757NJ,N/A,N/A,Lakeland Linder,LAL,Cessna 172,N/A,28,-382,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N48787,N/A,N/A,Glendale Muni,GEU,Cessna 172,N/A,37,-479,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N64823,N/A,N/A,Tampa Exec,VDF,Cessna 172,N/A,15,20,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N48967,N/A,N/A,Myrtle Beach,MYR,Cessna 172,N/A,12,-244,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+N152DM,N/A,N/A,Jacksonville Exec At Craig,CRG,Cessna 172,N/A,41,-561,sportflugzeug_cessna_static,4,F,10,20,20,15,15
+TMB193,N/A,N/A,Oakland,OAK,Honda HA-420,N/A,17,-133,privatjet1_static,5,F,10,20,20,15,15
+GTW184,N/A,N/A,Van Nuys,VNY,Honda HA-420,N/A,36,-551,privatjet1_static,5,F,10,20,20,15,15
+N143RP,N/A,N/A,St Louis,SUS,Honda HA-420,N/A,33,3,privatjet1_static,5,F,10,20,20,15,15
+JIT679,N/A,N/A,Piedmont Triad,GSO,Honda HA-420,N/A,15,142,privatjet1_static,5,F,10,20,20,15,15
+JIT100,N/A,N/A,Boca Raton,BCT,Honda HA-420,N/A,41,41,privatjet1_static,5,F,10,20,20,15,15
+JIT41,N/A,N/A,Salt Lake City,SLC,Honda HA-420,N/A,52,175,privatjet1_static,5,F,10,20,20,15,15
+JIT404,N/A,N/A,Arlington,GKY,Honda HA-420,N/A,25,-439,privatjet1_static,5,F,10,20,20,15,15

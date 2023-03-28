@@ -1,6 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System; 
+using System.IO;
+
+
+ // PlaneData Class
+public class PlaneData
+{
+    public string callSign;
+    public string iata;
+    public string icao;
+    public string arriveDepart;
+    public string adIATA;
+    public string planeType;
+    public string priority;
+    public float fuel;
+    public float timeTillOnTime;
+    public string planeAsset;
+    public int maxPassengers;
+    public char planeSize;
+    public float minFuel;
+    public float timeToTerminal;
+    public float timeToRunway;
+    public float timeToLand;
+    public float timeToAir;
+}
 
 // class that handles the atc game logic
 public class ATC : MonoBehaviour
@@ -11,7 +36,11 @@ public class ATC : MonoBehaviour
     public int selectedButton = -1; // the button that the user has currently selected, -1 if none
     public bool isDepartureButton = true; //notifies the aesthetic renderer if the button selected was a runwaya or departure button
     GameObject panel; //display panel object
-    GameObject[] panelElements; //display panel elements 
+    GameObject[] panelElements; //display panel elements
+   
+    public List<PlaneData> allPlaneData;
+
+
     // called when a plane is selected from the departures UI
     void Start() {
         GameObject g = FindInActiveObjectByName("FlightDisplay");
@@ -29,7 +58,48 @@ public class ATC : MonoBehaviour
         panelElements[2] = statusText;
         panelElements[3] = waitText;
         panelElements[4] = description;
+        allPlaneData = new List<PlaneData>();
+        readPlaneData("/Users/neal/final-approach-vr/Assets/VRPlaneInfo.csv");
+
     }
+
+
+    public void readPlaneData(string fileName) {
+        StreamReader strReader = new StreamReader(fileName);
+        bool endOfFile = false; 
+        // while not end of file use ReadLine method to read comma delimited data
+        while (!endOfFile) {
+            string dataString = strReader.ReadLine();
+            if (dataString == null) {
+                endOfFile = true;
+                break;
+            }
+            string[] dataValues = dataString.Split(',');
+            Debug.Log("data values length: " + dataValues.Length);
+            PlaneData planeData = new PlaneData();
+            // assign data values to plane data
+            planeData.callSign = dataValues[0];
+            planeData.iata = dataValues[1];
+            planeData.icao = dataValues[2];
+            planeData.arriveDepart = dataValues[3];
+            planeData.adIATA = dataValues[4];
+            planeData.planeType = dataValues[5];
+            planeData.priority = dataValues[6];
+            planeData.fuel = float.Parse(dataValues[7]);
+            planeData.timeTillOnTime = float.Parse(dataValues[8]);
+            planeData.planeAsset = dataValues[9];
+            planeData.maxPassengers = int.Parse(dataValues[10]);
+            planeData.planeSize = dataValues[11][0];
+            planeData.minFuel = float.Parse(dataValues[12]);
+            planeData.timeToTerminal = float.Parse(dataValues[13]);
+            planeData.timeToRunway = float.Parse(dataValues[14]);
+            planeData.timeToLand = float.Parse(dataValues[15]);
+            planeData.timeToAir = float.Parse(dataValues[16]);
+            allPlaneData.Add(planeData);
+        }
+    }
+
+
     public void selectDepartingAirplane(int index) {
         if (selectedAirplane == terminal._planes[index]) {  // deselect the currently selected plane
             selectedAirplane = null;
@@ -120,3 +190,4 @@ public class ATC : MonoBehaviour
         return null;
     }
 }
+
