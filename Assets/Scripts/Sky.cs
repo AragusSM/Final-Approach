@@ -25,21 +25,27 @@ public class Sky : MonoBehaviour
 
     // creates an airplane, initializes it, and adds to the list
     void createPlane() {
+        // if user has chosen all planes, don't add any more planes => game ends:
+        if(atc.chosenPlanes.Count == atc.allPlaneData.Count){
+            return;
+        }
         Airplane newPlane = Instantiate(airplane, new Vector3(0, 1, 0), Quaternion.identity);
         List<PlaneData> planeData = atc.allPlaneData;
         int index = Random.Range(0, planeData.Count);
-        // if user has selected all planes, clear the list:
-        if(atc.chosenPlanes.Count == atc.allPlaneData.Count){
-            atc.chosenPlanes.Clear();
-        }
-        // otherwise, find an index that the user has not chosen and choose that plane
+        // find an index that the user has not chosen and choose that plane
         while(atc.chosenPlanes.Contains(index)){
             index = Random.Range(0, planeData.Count);
         }
 
         PlaneData chosenPlane = planeData[index];
-
-        newPlane._flightName = chosenPlane.callSign + chosenPlane.iata;    // currently the flight name is just the airplane number in the order it was spawned
+        
+        if(chosenPlane.iata.Equals("N/A")) {
+            newPlane._flightName = chosenPlane.callSign + chosenPlane.adIATA; 
+        }
+        else {
+            newPlane._flightName = chosenPlane.callSign + chosenPlane.iata; 
+        }
+          
         newPlane._flightIndex = _planes.Count;
         newPlane.status = PlaneStatus.Circling;
         newPlane.departure = false;
@@ -62,6 +68,8 @@ public class Sky : MonoBehaviour
         newPlane.passengersOnBoard = chosenPlane.maxPassengers;
         newPlane.planeAsset = chosenPlane.planeAsset; 
         newPlane.waitingTime = 0;
+        
+        // sky specific property assignment:
         newPlane.sky = this;
         newPlane.atcRef = this.atc;
         _planes.Add(newPlane);
