@@ -38,6 +38,10 @@ public class Sky : MonoBehaviour
         newPlane.waitingTime = 0;
         newPlane.sky = this;
         _planes.Add(newPlane);
+        if(atc) {
+            Debug.Log("ATC is not null");
+            Debug.Log(atc.allPlaneData);
+        }
         Debug.Log("Created new plane: " + newPlane._flightName + ". There are " + _planes.Count + " planes in the list.");
     }
 
@@ -54,7 +58,5 @@ public class Sky : MonoBehaviour
         newbutton.GetComponent<Button>().onClick.AddListener(delegate {atc.selectArrivingAirplane(newbutton.buttonNumber); });
         _buttons.Add(newbutton);
     }
-
-
 }
 

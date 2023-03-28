@@ -40,6 +40,7 @@ public class ATC : MonoBehaviour
    
     public List<PlaneData> allPlaneData;
 
+    public HashSet<String> chosenPlanes;
 
     // called when a plane is selected from the departures UI
     void Start() {
@@ -59,6 +60,7 @@ public class ATC : MonoBehaviour
         panelElements[3] = waitText;
         panelElements[4] = description;
         allPlaneData = new List<PlaneData>();
+        chosenPlanes = new HashSet<String>();
         readPlaneData("/Users/neal/final-approach-vr/Assets/VRPlaneInfo.csv");
 
     }
@@ -75,7 +77,6 @@ public class ATC : MonoBehaviour
                 break;
             }
             string[] dataValues = dataString.Split(',');
-            Debug.Log("data values length: " + dataValues.Length);
             PlaneData planeData = new PlaneData();
             // assign data values to plane data
             planeData.callSign = dataValues[0];
