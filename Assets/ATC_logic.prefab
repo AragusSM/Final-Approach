@@ -1982,6 +1982,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8593382281121379167}
     m_Modifications:
+    - target: {fileID: 1577270689619871963, guid: 5ed9abaa483eda3439f7c68af4e449a1,
+        type: 3}
+      propertyPath: m_text
+      value: 'Passengers: 180, PlaneType: Airbus A320, Priority: Normal'
+      objectReference: {fileID: 0}
     - target: {fileID: 2713064858122882935, guid: 5ed9abaa483eda3439f7c68af4e449a1,
         type: 3}
       propertyPath: m_Name
@@ -2046,6 +2051,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5448478912813265534, guid: 5ed9abaa483eda3439f7c68af4e449a1,
+        type: 3}
+      propertyPath: m_text
+      value: Frontier 2510FFT2510
+      objectReference: {fileID: 0}
+    - target: {fileID: 6415543791720434707, guid: 5ed9abaa483eda3439f7c68af4e449a1,
+        type: 3}
+      propertyPath: m_text
+      value: Returning
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5ed9abaa483eda3439f7c68af4e449a1, type: 3}

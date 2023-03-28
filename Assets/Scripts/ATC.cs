@@ -41,6 +41,7 @@ public class ATC : MonoBehaviour
     public List<PlaneData> allPlaneData; // list of planeObject data pulled from csv
 
     public HashSet<int> chosenPlanes; // indices of the chosen planes (shared across sky and terminal)
+    public TextAsset textAssetData;
 
     // called when a plane is selected from the departures UI
     void Start() {
@@ -64,41 +65,40 @@ public class ATC : MonoBehaviour
         // chnage this path based on where you put the csv file
         readPlaneData("/Users/neal/final-approach-vr/Assets/VRPlaneInfo.csv");
 
+
     }
 
     // read plane data from csv file
     public void readPlaneData(string fileName) {
-        StreamReader strReader = new StreamReader(fileName);
-        bool endOfFile = false; 
-        // while not end of file use ReadLine method to read comma delimited data
-        while (!endOfFile) {
-            string dataString = strReader.ReadLine();
-            if (dataString == null) {
-                endOfFile = true;
-                break;
-            }
-            string[] dataValues = dataString.Split(',');
-            PlaneData planeData = new PlaneData();
-            // assign data values to plane data
-            planeData.callSign = dataValues[0];
-            planeData.iata = dataValues[1];
-            planeData.icao = dataValues[2];
-            planeData.arriveDepart = dataValues[3];
-            planeData.adIATA = dataValues[4];
-            planeData.planeType = dataValues[5];
-            planeData.priority = dataValues[6];
-            planeData.fuel = float.Parse(dataValues[7]);
-            planeData.timeTillOnTime = float.Parse(dataValues[8]);
-            planeData.planeAsset = dataValues[9];
-            planeData.maxPassengers = int.Parse(dataValues[10]);
-            planeData.planeSize = dataValues[11][0];
-            planeData.minFuel = float.Parse(dataValues[12]);
-            planeData.timeToTerminal = float.Parse(dataValues[13]);
-            planeData.timeToRunway = float.Parse(dataValues[14]);
-            planeData.timeToLand = float.Parse(dataValues[15]);
-            planeData.timeToAir = float.Parse(dataValues[16]);
-            allPlaneData.Add(planeData);
-        }
+        string csvString = "Air Force ONE,N/A,N/A,Andrews Air Force Base,AFB,Boeing 747,Priority,28,230,passagiermaschine_747_static,416,A,3,20,20,15,15\nKorean Air 539,KAL539,KE539,Seoul,ICN,Boeing 747,N/A,36,-325,passagiermaschine_747_static,416,A,3,20,20,15,15\nLufthansa 419,DLH419,LH419,Frankfurt,FRA,Boeing 747,N/A,25,120,passagiermaschine_747_static,416,A,3,20,20,15,15\nQatar Airways 8830,QTR8830,QR8830,Melbourne,MEL,Boeing 747,N/A,38,215,passagiermaschine_747_static,416,A,3,20,20,15,15\nCathay Pacific 3081,CPA3081,CX3081,Hong Kong,HKG,Boeing 747,N/A,36,295,passagiermaschine_747_static,416,A,3,20,20,15,15\nSingapore Airlines 7290,SIA7290,SQ7290,Singapore,SIN,Boeing 747,N/A,6,-3,passagiermaschine_747_static,416,A,3,20,20,15,15\nAir Force ABYSS,N/A,N/A,Ramstein Air Base,RMS,Lockheed C-130,Priority,17,-498,frachtmaschine_antonov_static,124,A,3,20,20,15,15\nAir Force KILO,N/A,N/A,RAF Mildenhall,MHZ,Lockheed C-130,Priority,7,-529,frachtmaschine_antonov_static,124,A,3,20,20,15,15\nAir Force SCRON,N/A,N/A,Peterson Air Force Base,COS,Lockheed C-130,Priority,38,-199,frachtmaschine_antonov_static,124,A,3,20,20,15,15\nAir Force EDGAR,N/A,N/A,Bagram Air Base,OAI,Lockheed C-130,Priority,22,-509,frachtmaschine_antonov_static,124,A,3,20,20,15,15\nIcelandair 614,ICE614,FI614,New York JFK,JFK,Boeing 757,N/A,17,77,frachtmaschine_757_static,239,B,4,20,20,15,15\nDelta 937,DAL937,DL937,Denver,DEN,Boeing 757,N/A,52,272,frachtmaschine_757_static,239,B,4,20,20,15,15\nUnited 1976,UAL1976,UA1976,San Francisco,SFO,Boeing 757,N/A,47,89,frachtmaschine_757_static,239,B,4,20,20,15,15\nDelta 947,DAL947,DL947,Atlanta,ATL,Boeing 757,N/A,36,231,frachtmaschine_757_static,239,B,4,20,20,15,15\nUnited 1432,UAL1432,UA1432,Los Angeles,LAX,Boeing 757,N/A,18,-489,frachtmaschine_757_static,239,B,4,20,20,15,15\nUnited 714,UAL714,UA714,Chicago,ORD,Boeing 757,N/A,12,-124,frachtmaschine_757_static,239,B,4,20,20,15,15\nUnited 724,UAL724,UA724,Honolulu,HNL,Boeing 757,N/A,45,155,frachtmaschine_757_static,239,B,4,20,20,15,15\nDelta 2120,DAL2120,DL2120,Las Vegas,LAS,Boeing 757,N/A,11,88,frachtmaschine_757_static,239,B,4,20,20,15,15\nUnited 2310,UAL2310,UA2310,Boston,BOS,Boeing 757,N/A,47,-428,frachtmaschine_757_static,239,B,4,20,20,15,15\nUnited 8116,UAL8116,UA8116,Newark,EWR,Boeing 757,N/A,22,-104,frachtmaschine_757_static,239,B,4,20,20,15,15\nDelta 1426,DAL1426,DL1426,Minneapolis,MSP,Boeing 757,N/A,29,-297,frachtmaschine_757_static,239,B,4,20,20,15,15\n";
+        
+        string[] csvStringDelimed = csvString.Split('\n');
+        // string[] newCSVArr = textAssetData.Split(new string{"\n"}, System.StringSplitOptions.None);
+
+    for (int i = 0; i < csvStringDelimed.Length; i++) {
+        string[] dataValues = csvStringDelimed[i].Split(',');
+        PlaneData planeData = new PlaneData();
+        // assign data values to plane data
+        planeData.callSign = dataValues[0];
+        planeData.iata = dataValues[1];
+        planeData.icao = dataValues[2];
+        planeData.arriveDepart = dataValues[3];
+        planeData.adIATA = dataValues[4];
+        planeData.planeType = dataValues[5];
+        planeData.priority = dataValues[6];
+        planeData.fuel = float.Parse(dataValues[7]);
+        planeData.timeTillOnTime = float.Parse(dataValues[8]);
+        planeData.planeAsset = dataValues[9];
+        planeData.maxPassengers = int.Parse(dataValues[10]);
+        planeData.planeSize = dataValues[11][0];
+        planeData.minFuel = float.Parse(dataValues[12]);
+        planeData.timeToTerminal = float.Parse(dataValues[13]);
+        planeData.timeToRunway = float.Parse(dataValues[14]);
+        planeData.timeToLand = float.Parse(dataValues[15]);
+        planeData.timeToAir = float.Parse(dataValues[16]);
+        allPlaneData.Add(planeData);
+    }
+        
     }
 
 
@@ -193,4 +193,3 @@ public class ATC : MonoBehaviour
         return null;
     }
 }
-

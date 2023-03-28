@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18025592, g: 0.22567038, b: 0.3068796, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6862,6 +6862,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 115045830}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &116083028 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4920868952689050173, guid: 20593ea3d083a7d4c9f24b29c745dc2f,
+    type: 3}
+  m_PrefabInstance: {fileID: 407716142}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c1e9530cbd39347968a4a6fd7934f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &116440946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18584,6 +18596,21 @@ PrefabInstance:
         type: 3}
       propertyPath: timeToRunway
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4735878820672234469, guid: 20593ea3d083a7d4c9f24b29c745dc2f,
+        type: 3}
+      propertyPath: atc
+      value: 
+      objectReference: {fileID: 116083028}
+    - target: {fileID: 7081802835661417933, guid: 20593ea3d083a7d4c9f24b29c745dc2f,
+        type: 3}
+      propertyPath: atc
+      value: 
+      objectReference: {fileID: 116083028}
+    - target: {fileID: 7314895297153162991, guid: 20593ea3d083a7d4c9f24b29c745dc2f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8593382281121379167, guid: 20593ea3d083a7d4c9f24b29c745dc2f,
         type: 3}
