@@ -16,14 +16,26 @@ public class Airplane : MonoBehaviour
     public int waitingTime; // the time in secs that this plane has waited
     public char planeClass; // char that represents size / class of plane
 
+    public ATC atcRef; // reference to the ATC
+
     public Dictionary<char, float> fuelMap = new Dictionary<char, float>{ // maps plane class to fuel decrement amt / second 
-            { 'a', 0.05f },
-            { 'b', 0.07f },
-            { 'c', 0.11f},
-            { 'd', 0.14f },
-            { 'e', 0.17f },
-            { 'f', 0.20f },
-        };
+            { 'A', 0.05f },
+            { 'B', 0.07f },
+            { 'C', 0.11f},
+            { 'D', 0.14f },
+            { 'E', 0.17f },
+            { 'F', 0.20f },
+    };
+    
+    public Dictionary<char, int> basePointMap = new Dictionary<char, int>{ // maps plane class to base point value 
+            { 'A', 100 },
+            { 'B', 150 },
+            { 'C', 200},
+            { 'D', 250 },
+            { 'E', 300 },
+            { 'F', 350 },
+    };
+
 
     // temp values
     public float timeToAir = 15.0f;
@@ -69,6 +81,7 @@ public class Airplane : MonoBehaviour
             //delete the button and airplane
             DepartureButton d = terminal._buttons[_flightIndex];
             terminal._buttons.Remove(d);
+            this.atcRef.selectedButton = -1;
             Destroy(d);
             Destroy(this);
             //update the indices of the other buttons and planes
@@ -86,6 +99,7 @@ public class Airplane : MonoBehaviour
             //delete the button and airplane
             ArrivalButton a = sky._buttons[_flightIndex];
             sky._buttons.Remove(a);
+            this.atcRef.selectedButton = -1;
             Destroy(a);
             Destroy(this);
             //update the indices of the other buttons and planes

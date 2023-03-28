@@ -38,9 +38,9 @@ public class ATC : MonoBehaviour
     GameObject panel; //display panel object
     GameObject[] panelElements; //display panel elements
    
-    public List<PlaneData> allPlaneData;
+    public List<PlaneData> allPlaneData; // list of planeObject data pulled from csv
 
-    public HashSet<String> chosenPlanes;
+    public HashSet<int> chosenPlanes; // indices of the chosen planes (shared across sky and terminal)
 
     // called when a plane is selected from the departures UI
     void Start() {
@@ -60,7 +60,8 @@ public class ATC : MonoBehaviour
         panelElements[3] = waitText;
         panelElements[4] = description;
         allPlaneData = new List<PlaneData>();
-        chosenPlanes = new HashSet<String>();
+        chosenPlanes = new HashSet<int>();
+        // chnage this path based on where you put the csv file
         readPlaneData("/Users/neal/final-approach-vr/Assets/VRPlaneInfo.csv");
 
     }

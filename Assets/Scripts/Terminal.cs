@@ -37,6 +37,7 @@ public class Terminal : MonoBehaviour
         newPlane.planeClass = (char) Random.Range(96, 102); // temp
         newPlane.waitingTime = 0;
         newPlane.terminal = this;
+        newPlane.atcRef = this.atc;
         _planes.Add(newPlane);
         Debug.Log("Created new plane: " + newPlane._flightName + ". There are " + _planes.Count + " planes in the list.");
     }

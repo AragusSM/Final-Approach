@@ -26,22 +26,41 @@ public class Sky : MonoBehaviour
     // creates an airplane, initializes it, and adds to the list
     void createPlane() {
         Airplane newPlane = Instantiate(airplane, new Vector3(0, 1, 0), Quaternion.identity);
-        newPlane._flightName = _planes.Count.ToString();    // currently the flight name is just the airplane number in the order it was spawned
+        List<PlaneData> planeData = atc.allPlaneData;
+        int index = Random.Range(0, planeData.Count);
+        // if user has selected all planes, clear the list:
+        if(atc.chosenPlanes.Count == atc.allPlaneData.Count){
+            atc.chosenPlanes.Clear();
+        }
+        // otherwise, find an index that the user has not chosen and choose that plane
+        while(atc.chosenPlanes.Contains(index)){
+            index = Random.Range(0, planeData.Count);
+        }
+
+        PlaneData chosenPlane = planeData[index];
+
+        newPlane._flightName = chosenPlane.callSign + chosenPlane.iata;    // currently the flight name is just the airplane number in the order it was spawned
         newPlane._flightIndex = _planes.Count;
         newPlane.status = PlaneStatus.Circling;
         newPlane.departure = false;
-        newPlane.baseValue = 5; // temp
-        newPlane.priorityMultiplier = 1; // temp
-        newPlane.fuelLevel = 50; //temp
+        newPlane.baseValue = newPlane.basePointMap[chosenPlane.planeType[0]]; 
+        if(chosenPlane.priority.Equals("Priority")){
+            newPlane.priorityMultiplier = 2;
+        }
+        else if(chosenPlane.priority.Equals("Emergency")){
+            newPlane.priorityMultiplier = 3;
+        }
+        else{
+            newPlane.priorityMultiplier = 1;
+        }
+
+        newPlane.fuelLevel = chosenPlane.fuel;
         // logic for assigning temp plane class: 
-        newPlane.planeClass = (char) Random.Range(96, 102); // temp
+        newPlane.planeClass = chosenPlane.planeSize; 
         newPlane.waitingTime = 0;
         newPlane.sky = this;
+        newPlane.atcRef = this.atc;
         _planes.Add(newPlane);
-        if(atc) {
-            Debug.Log("ATC is not null");
-            Debug.Log(atc.allPlaneData);
-        }
         Debug.Log("Created new plane: " + newPlane._flightName + ". There are " + _planes.Count + " planes in the list.");
     }
 
