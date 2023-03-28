@@ -16,10 +16,12 @@ public class Terminal : MonoBehaviour
     private float nextActionTime = 0.0f;    // current time
     private float period = 15.0f;   // time in seconds between spawning airplanes
     void Update() {
-        if (Time.time > nextActionTime) {
-            nextActionTime += period;
-            createButton();
-            createPlane();
+        if (GameManager.state == GameState.AirTrafficControl) { // make sure we're in gameplay state
+            if (Time.time > nextActionTime) {
+                nextActionTime += period;
+                createButton();
+                createPlane();
+            }
         }
     }
 
