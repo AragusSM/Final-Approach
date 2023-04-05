@@ -8,6 +8,7 @@ public class Runway : MonoBehaviour
     public bool open; // true if this runway can be taxiied to (there is not another plane taxiing here or already here)
     public float timeToRunway = 10.0f;  // time it takes for an airplane to get here
     public float timeToLand = 15.0f; //time it takes to land
+    public int index;
 
     public Airplane plane;  // the airplane that is arriving here or is already here
     

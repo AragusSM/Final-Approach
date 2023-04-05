@@ -80,9 +80,14 @@ public class Airplane : MonoBehaviour
             GameManager.score += baseValue - ((waitingTimeSeconds - LEEWAY) * priorityMultiplier);
             //turn off the panel
             GameObject g = ATC.FindInActiveObjectByName("FlightDisplay");
+            GameObject g2 = ATC.FindInActiveObjectByName("ProjectorLightLeft");
+            GameObject g3 = ATC.FindInActiveObjectByName("ProjectorLightRight");
+
             string displayname = ATC.FindInActiveObjectByName("FlightNumberText").gameObject.GetComponent<TMPro.TextMeshProUGUI>().text;
             if(displayname.Equals(this._flightName)){
                g.SetActive(false); 
+               g2.SetActive(false); 
+               g3.SetActive(false); 
             }
             //delete the button and airplane
             DepartureButton d = terminal._buttons[_flightIndex];
@@ -99,15 +104,21 @@ public class Airplane : MonoBehaviour
             GameManager.score += baseValue - ((waitingTimeSeconds - LEEWAY) * priorityMultiplier);
             //turn off the panel
             GameObject g = ATC.FindInActiveObjectByName("FlightDisplay");
+            GameObject g2 = ATC.FindInActiveObjectByName("ProjectorLightLeft");
+            GameObject g3 = ATC.FindInActiveObjectByName("ProjectorLightRight");
+
             string displayname = ATC.FindInActiveObjectByName("FlightNumberText").gameObject.GetComponent<TMPro.TextMeshProUGUI>().text;
             if(displayname.Equals(this._flightName)){
                g.SetActive(false); 
+               g2.SetActive(false); 
+               g3.SetActive(false); 
             }
             //delete the button and airplane
             ArrivalButton a = sky._buttons[_flightIndex];
             sky._buttons.Remove(a);
             this.atcRef.selectedButton = -1;
             Destroy(a);
+            Destroy(this.gameObject);
             Destroy(this);
             //update the indices of the other buttons and planes
             UpdatePlanes(sky);

@@ -42,6 +42,7 @@ public class ATC : MonoBehaviour
 
     public HashSet<int> chosenPlanes; // indices of the chosen planes (shared across sky and terminal)
     public TextAsset textAssetData;
+    public AudioSource planeSound2;
 
     // called when a plane is selected from the departures UI
     void Start() {
@@ -142,10 +143,21 @@ public class ATC : MonoBehaviour
                 selectedButton = -1;
                 if(selectedAirplane.status == PlaneStatus.Terminal){
                     selectedAirplane.status = PlaneStatus.Taxiing;
-                    selectedAirplane.GetComponent<Animator>().Play("Taxiing");
+                    if(runway.index == 1){
+                        selectedAirplane.GetComponent<Animator>().Play("Taxiing");
+                    }else{
+                        selectedAirplane.GetComponent<Animator>().Play("Taxiing2");
+                    }
+                    
                 }else{
                     selectedAirplane.status = PlaneStatus.Landing;
-                    selectedAirplane.GetComponent<Animator>().Play("Landing");
+                    if(runway.index == 1){
+                        selectedAirplane.GetComponent<Animator>().Play("Landing2");
+                    }else{
+                        selectedAirplane.GetComponent<Animator>().Play("Landing");
+                    }
+                    planeSound2.time = 12.0f;
+                    planeSound2.Play();
                 }
                 runway.plane = selectedAirplane;
                 runway.open = false;
@@ -161,10 +173,16 @@ public class ATC : MonoBehaviour
     //display the information on the monitor
     public void display(bool Display, Airplane a){
             GameObject g = FindInActiveObjectByName("FlightDisplay");
+            GameObject g2 = FindInActiveObjectByName("ProjectorLightLeft");
+            GameObject g3 = FindInActiveObjectByName("ProjectorLightRight");
         if(Display){
             g.SetActive(true);
+            g2.SetActive(true);
+            g3.SetActive(true);
         }else{
             g.SetActive(false);
+            g2.SetActive(false);
+            g3.SetActive(false);
         }
     }
 

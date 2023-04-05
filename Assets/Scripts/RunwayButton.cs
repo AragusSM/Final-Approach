@@ -8,17 +8,23 @@ public class RunwayButton : MonoBehaviour
     public bool active;
     
     public AudioSource planeSound;
-    public AudioSource planeSound2;
 
     public void runwayButtonPress() {
         if (active) {
             runWay.plane.finalStatus();
             if(runWay.plane.departure){
-                runWay.plane.GetComponent<Animator>().Play("TakeOff");
+                if(runWay.index == 1){
+                    runWay.plane.GetComponent<Animator>().Play("TakeOff");
+                }else{
+                    runWay.plane.GetComponent<Animator>().Play("TakeOff2");
+                }
                 planeSound.Play();
             }else{
-                runWay.plane.GetComponent<Animator>().Play("Returning");
-                planeSound2.Play();
+                if(runWay.index == 1){
+                    runWay.plane.GetComponent<Animator>().Play("Returning2");
+                }else{
+                    runWay.plane.GetComponent<Animator>().Play("Returning");
+                }
             }
             
         }

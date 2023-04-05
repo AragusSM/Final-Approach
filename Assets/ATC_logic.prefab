@@ -544,6 +544,7 @@ MonoBehaviour:
   open: 1
   timeToRunway: 20
   timeToLand: 15
+  index: 2
   plane: {fileID: 0}
 --- !u!1 &6404841967882187613
 GameObject:
@@ -808,6 +809,7 @@ MonoBehaviour:
   open: 1
   timeToRunway: 20
   timeToLand: 15
+  index: 1
   plane: {fileID: 0}
 --- !u!1 &7278095303329709280
 GameObject:
@@ -1307,6 +1309,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runWay: {fileID: 3133509280402011400}
   active: 0
+  planeSound: {fileID: 0}
+  planeSound2: {fileID: 0}
 --- !u!1 &8468710300606125885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1726,6 +1730,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runWay: {fileID: 1436015299082101483}
   active: 0
+  planeSound: {fileID: 0}
+  planeSound2: {fileID: 0}
 --- !u!1 &8556085700404566339
 GameObject:
   m_ObjectHideFlags: 0
