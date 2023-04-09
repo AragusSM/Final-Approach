@@ -860,6 +860,7 @@ MonoBehaviour:
   selectedButton: -1
   isDepartureButton: 1
   textAssetData: {fileID: 0}
+  planeSound2: {fileID: 0}
 --- !u!1 &7320843780629214381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,7 +1311,6 @@ MonoBehaviour:
   runWay: {fileID: 3133509280402011400}
   active: 0
   planeSound: {fileID: 0}
-  planeSound2: {fileID: 0}
 --- !u!1 &8468710300606125885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1731,7 +1731,6 @@ MonoBehaviour:
   runWay: {fileID: 1436015299082101483}
   active: 0
   planeSound: {fileID: 0}
-  planeSound2: {fileID: 0}
 --- !u!1 &8556085700404566339
 GameObject:
   m_ObjectHideFlags: 0

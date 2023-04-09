@@ -5,6 +5,11 @@ using UnityEngine;
 // class that represents an airplane
 public class Airplane : MonoBehaviour
 {
+
+    public const int MED_WAIT_TIME = 30; // med amt of waiting time as a const
+    public const int XTR_WAIT_TIME = 60; // large amt of waiting time as a const
+    public const float DEPART_MULT_MED = 1.25f; // multiplier for terminal planes waiting more than 30 seconds
+    public const float DEPART_MULT_XTR = 1.5f; // multiplier for terminal planes waiting more than 60 seconds
     public string _flightName;  // flight identifier
     public int _flightIndex;
     public PlaneStatus status;  // status of this plane
@@ -48,7 +53,7 @@ public class Airplane : MonoBehaviour
 
     public Terminal terminal; 
     public Sky sky;    
-    const int LEEWAY = 5;
+    const int LEEWAY = 30;
 
     // update final status depending on plane type
     public void finalStatus() {
@@ -77,7 +82,15 @@ public class Airplane : MonoBehaviour
         //remove this plane along with the button associated with it
         if (this.status == PlaneStatus.TakingOff &&  timeToAir <= 0) {
             terminal._planes.Remove(this);
-            GameManager.score += baseValue - ((waitingTimeSeconds - LEEWAY) * priorityMultiplier);
+            if(waitingTimeSeconds <= MED_WAIT_TIME) {
+                GameManager.score += Mathf.Max(baseValue - ((waitingTimeSeconds - LEEWAY) * priorityMultiplier), 0);
+            }
+            else if(waitingTime <= XTR_WAIT_TIME) {
+                GameManager.score += Mathf.Max(baseValue - (((int)(waitingTimeSeconds * DEPART_MULT_MED) - LEEWAY) * priorityMultiplier), 0);
+            }
+            else {
+                GameManager.score += Mathf.Max(baseValue - (((int)(waitingTimeSeconds * DEPART_MULT_XTR) - LEEWAY) * priorityMultiplier), 0);
+            }
             //turn off the panel
             GameObject g = ATC.FindInActiveObjectByName("FlightDisplay");
             GameObject g2 = ATC.FindInActiveObjectByName("ProjectorLightLeft");
@@ -101,7 +114,7 @@ public class Airplane : MonoBehaviour
 
         } else if(this.status == PlaneStatus.Returning && timeToTerminal <= 0) {
             sky._planes.Remove(this);
-            GameManager.score += baseValue - ((waitingTimeSeconds - LEEWAY) * priorityMultiplier);
+            GameManager.score += Mathf.Max(baseValue - ((waitingTimeSeconds - LEEWAY) * priorityMultiplier), 0);
             //turn off the panel
             GameObject g = ATC.FindInActiveObjectByName("FlightDisplay");
             GameObject g2 = ATC.FindInActiveObjectByName("ProjectorLightLeft");

@@ -40,6 +40,14 @@ public class DepartureButton : MonoBehaviour
                 }else{
                     this.transform.GetChild(1).GetChild(1).GetComponent<RawImage>().color = Color.green;
                 }
+                // change the color of the departure buttons on the basis of waiting time
+                // to instill urgency in player:
+                if(terminal._planes[buttonNumber].waitingTimeSeconds >= 60) {
+                    this.gameObject.GetComponent<Image>().color = Color.red;
+                }
+                else if(terminal._planes[buttonNumber].waitingTimeSeconds >= 30) {
+                    this.gameObject.GetComponent<Image>().color = Color.yellow;
+                }
             } else {
                 this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "";
             }

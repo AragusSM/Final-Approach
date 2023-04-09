@@ -19,6 +19,7 @@ public class Terminal : MonoBehaviour
         if (GameManager.state == GameState.AirTrafficControl) { // make sure we're in gameplay state
             if (Time.time > nextActionTime) {
                 nextActionTime += period;
+                period = Random.Range(20,35);
                 createButton();
                 createPlane();
             }

@@ -19,6 +19,7 @@ public class Sky : MonoBehaviour
         if (GameManager.state == GameState.AirTrafficControl) {
             if (Time.time > nextActionTime) {
                 nextActionTime += period;
+                period = Random.Range(20,35);
                 createButton();
                 createPlane();
             }
