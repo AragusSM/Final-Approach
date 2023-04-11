@@ -34,7 +34,7 @@ public class GameObjectList
 
 public class JsonLoader : MonoBehaviour
 {
-    public string fileName;
+    public string csvjson;
     public GameObject prefab;
 
     void Start()
