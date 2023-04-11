@@ -19,7 +19,7 @@ public class ArrivalButton : MonoBehaviour
         if(sky != null && atc != null){
             if (sky._planes.Count > buttonNumber) {    // only renders text if there is a plane's data to display
             string priority = "";
-                if(sky._planes[buttonNumber].priority.Equals("Higher Piority")){
+                if(sky._planes[buttonNumber].priority.Equals("Higher Priority")){
                     priority = "!";
                 }else if (sky._planes[buttonNumber].priority.Equals("Emergency")){
                     priority = "!!!";

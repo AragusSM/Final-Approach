@@ -13,13 +13,16 @@ public class Sky : MonoBehaviour
     public List<ArrivalButton> _buttons = new List<ArrivalButton>();
     public ATC atc;
 
+    public float timefromstart = 0.0f;
+
     private float nextActionTime = 0.0f;    // current time
     private float period = 15.0f;   // time in seconds between spawning airplanes
     void Update() {
         if (GameManager.state == GameState.AirTrafficControl) {
-            if (Time.time > nextActionTime) {
+            timefromstart += Time.deltaTime;
+            if (timefromstart > nextActionTime) {
                 nextActionTime += period;
-                period = Random.Range(20,35);
+                period = Random.Range(30,50);
                 createButton();
                 createPlane();
             }

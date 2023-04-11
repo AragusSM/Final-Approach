@@ -12,14 +12,16 @@ public class Terminal : MonoBehaviour
     public List<DepartureButton> _buttons = new List<DepartureButton>();
 
     public ATC atc;
+    public float timefromstart = 0.0f;
 
     private float nextActionTime = 0.0f;    // current time
     private float period = 15.0f;   // time in seconds between spawning airplanes
     void Update() {
         if (GameManager.state == GameState.AirTrafficControl) { // make sure we're in gameplay state
-            if (Time.time > nextActionTime) {
+            timefromstart += Time.deltaTime;
+            if (timefromstart > nextActionTime) {
                 nextActionTime += period;
-                period = Random.Range(20,35);
+                period = Random.Range(30,50);
                 createButton();
                 createPlane();
             }
