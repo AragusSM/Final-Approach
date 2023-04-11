@@ -19581,6 +19581,12 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1054591686563312203, guid: 20593ea3d083a7d4c9f24b29c745dc2f,
+        type: 3}
+      propertyPath: models.Array.data[0]
+      value: 
+      objectReference: {fileID: 8936030728014859960, guid: dbce8f03258f9624b92547c6eb8ff591,
+        type: 3}
     - target: {fileID: 1436015299082101483, guid: 20593ea3d083a7d4c9f24b29c745dc2f,
         type: 3}
       propertyPath: index

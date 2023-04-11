@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // class that represents an airplane
 public class Airplane : MonoBehaviour
@@ -73,6 +74,12 @@ public class Airplane : MonoBehaviour
         // update fuel value if in air and depending on fuel class. Also note that the airplane consumes fuel if it is moving! (not at terminal)
         if (this.status != PlaneStatus.Terminal) {
             fuelLevel -= Time.deltaTime * fuelMap[this.planeClass];
+            // if the fuel level is 0 for any plane, the player automatically loses the game and is directed to the lose game screen
+            if (fuelLevel <= 0) {
+                InfoHolder.Points = GameManager.score;
+                InfoHolder.FailureReason = "Ran out of fuel!";
+                SceneManager.LoadScene(2);
+            }
         }
         if (this.status == PlaneStatus.TakingOff) {
             timeToAir -= Time.deltaTime;

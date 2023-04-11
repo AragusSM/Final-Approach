@@ -9,8 +9,14 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Mobile_Airport/Scenes/2DMainMenu.unity
+    guid: a12a4c885e6d349aabbb57242b32b3d3
+  - enabled: 1
     path: Assets/Mobile_Airport/Scenes/Airtport_Scene.unity
     guid: fa8944c5963fb97469fb35f42891b698
+  - enabled: 1
+    path: Assets/Mobile_Airport/Scenes/FailGameScreen.unity
+    guid: 15dfea6aa0c11460787c634b018ddc06
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}

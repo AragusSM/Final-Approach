@@ -7,7 +7,7 @@ using UnityEngine.UI;
 // In the future we may combine this into one class and have an arrival or departure variable
 public class Sky : MonoBehaviour
 {
-    public Airplane airplane; // airplane prefab
+    public Airplane[] models = new Airplane[10]; //airplane prefab collection
     public List<Airplane> _planes = new List<Airplane>();   // list of all arriving airplanes
     public ArrivalButton button; //button prefab
     public List<ArrivalButton> _buttons = new List<ArrivalButton>();
@@ -26,13 +26,40 @@ public class Sky : MonoBehaviour
         }
     }
 
+    Airplane selectAirplane(string model_name){
+        switch (model_name){
+            case "frachtmaschine_757_static":
+                return models[0];
+            case "frachtmaschine_antonov_static":
+                return models[1];
+            case "passagiermaschine_707_static":
+                return models[2];
+            case "passagiermaschine_747_static":
+                return models[3];
+            case "passagiermaschine_a320_static":
+                return models[4];
+            case "passagiermaschine_bae146_static":
+                return models[5];
+            case "privatjet1_static":
+                return models[6];
+            case "privatjet2_static":
+                return models[7];
+            case "sportflugzeug_beech_static":
+                return models[8];
+            case "sportflugzeug_cessna_static":
+                return models[9];
+            default:
+                return models[0];
+        }
+    }
+
     // creates an airplane, initializes it, and adds to the list
     void createPlane() {
         // if user has chosen all planes, don't add any more planes => game ends:
         if(atc.chosenPlanes.Count == atc.allPlaneData.Count){
             return;
         }
-        Airplane newPlane = Instantiate(airplane, new Vector3(0, 1, 0), Quaternion.identity);
+        
         List<PlaneData> planeData = atc.allPlaneData;
         int index = Random.Range(0, planeData.Count);
         // find an index that the user has not chosen and choose that plane
@@ -41,6 +68,7 @@ public class Sky : MonoBehaviour
         }
 
         PlaneData chosenPlane = planeData[index];
+        Airplane newPlane = Instantiate(selectAirplane(chosenPlane.planeAsset), new Vector3(0, 1, 0), Quaternion.identity);
         atc.chosenPlanes.Add(index);
 
         if(chosenPlane.iata.Equals("N/A")) {
