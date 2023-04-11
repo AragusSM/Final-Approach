@@ -71,12 +71,8 @@ public class Sky : MonoBehaviour
         Airplane newPlane = Instantiate(selectAirplane(chosenPlane.planeAsset), new Vector3(0, 1, 0), Quaternion.identity);
         atc.chosenPlanes.Add(index);
 
-        if(chosenPlane.iata.Equals("N/A")) {
-            newPlane._flightName = chosenPlane.callSign + chosenPlane.adIATA; 
-        }
-        else {
-            newPlane._flightName = chosenPlane.callSign + chosenPlane.iata; 
-        }
+        newPlane._flightName = chosenPlane.callSign; 
+        newPlane.ident = chosenPlane.ident;
           
         newPlane._flightIndex = _planes.Count;
         newPlane.status = PlaneStatus.Circling;
