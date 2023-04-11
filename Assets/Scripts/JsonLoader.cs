@@ -7,19 +7,20 @@ using System.IO;
 public class GameObjectData
 {
   
-    public string callSign;
-    public string iata;
-    public string icao;
-    public string arriveDepart;
-    public string adIATA;
-    public string planeType;
-    public string priority;
-    public float fuel;
-    public float timeTillOnTime;
-    public string planeAsset;
-    public int maxPassengers;
-    public char planeSize;
-    public float minFuel;
+    public string Callsign;
+    public string IATA;
+    public string ICAO;
+    public string PlaneIdent;
+    public string AD;
+    public string AD_IATA;
+    public string PlaneType;
+    public string PriorityEmergency;
+    public float Fuel;
+    public float TimeTillOntimeArriveDepart;
+    public string PlaneAsset;
+    public int MaxPassengers;
+    public char PlaneSize;
+    public float MinFuel;
     public float timeToTerminal;
     public float timeToRunway;
     public float timeToLand;
@@ -35,7 +36,7 @@ public class GameObjectList
 public class JsonLoader : MonoBehaviour
 {
     public string csvjson;
-    public GameObject DaddyObject;
+    public GameObject DaddyPlane;
 
     void Start()
     {
@@ -49,8 +50,9 @@ public class JsonLoader : MonoBehaviour
 
         foreach (GameObjectData gameObjectData in gameObjectList.gameObjects)
         {
-            GameObject obj = Instantiate(DaddyObject, gameObjectData.callSign, gameObjectData.IATA, gameObjectData.ICAO, gameObjectData.PlaneIdent, gameObjectData.AD, gameObjectData.AD_IATA, gameObjectData.PlaneType, gameObjectData.PriorityEmergency, gameObjectData.Fuel, gameObjectData.TimeTillOntimeArriveDepart, gameObjectData.PlaneAsset, gameObjectData.MaxPassengers, gameObjectData.PlaneSize, gameObjectData.MinFuel, gameObjectData.timeToTerminal, gameObjectData.timeToRunway, gameObjectData.timeToLand, gameObjectData.timeToAir);
-            obj.name = gameObjectData.name;
+            GameObject obj = Instantiate(DaddyPlane, gameObjectData.Callsign, gameObjectData.IATA, gameObjectData.ICAO, gameObjectData.PlaneIdent, gameObjectData.AD, gameObjectData.AD_IATA, gameObjectData.PlaneType, gameObjectData.PriorityEmergency, gameObjectData.Fuel, gameObjectData.TimeTillOntimeArriveDepart, gameObjectData.PlaneAsset, gameObjectData.MaxPassengers, gameObjectData.PlaneSize, gameObjectData.MinFuel, gameObjectData.timeToTerminal, gameObjectData.timeToRunway, gameObjectData.timeToLand, gameObjectData.timeToAir);
+           
+
         }
     }
 }
