@@ -5,6 +5,13 @@ This was our final project for our VR Development for Games class in the spring 
 ## Overview
 The player is an air traffic controller responsible for managing an airport's airplane takeoffs and landings. The player is in a control tower with monitors and controls allowing them to view and control arriving and departing planes. The player must manage the plane's resources and runway timers without causing airplane collisions and prioritizing on time arrivals and departures. The player’s goal is to manage the airplanes' takeoffs and landings efficiently without collisions, and allow the highest number of ontime arrivals and departures. In addition, the fuel level of the planes will allow for higher points to be scored at the end. Planes landed or taken off can also be scored according to the priority of the flights.
 
+## Realism
+In Final Approach VR, we have gone above and beyond to deliver an unmatched level of authenticity by ensuring that each 3D model of the planes in our simulator corresponds to actual real-life flights taken within the last 30 days. We have meticulously gathered and integrated data from various aviation sources, encompassing details such as the correct destination, flight number, IATA and ICAO codes, as well as the specific plane models. This painstaking attention to detail allows players to interact with a living, breathing virtual airspace, closely mirroring the dynamic nature of real-world air traffic.
+
+By incorporating real-life flight data into our game, we provide an immersive and educational experience that simulates the genuine challenges faced by air traffic controllers. Players have the opportunity to manage diverse aircraft models, ranging from small propeller planes to massive commercial airliners, each with their unique handling characteristics and operational requirements. 
+
+To further enhance the authenticity of our game, we integrated accurate 3D rendering of a real airport and control tower. Players can expect to experience realistic audio and visual cues, as well as the intense decision-making processes that air traffic controllers face daily. The result is an unparalleled VR experience that not only entertains but also educates users about the complexities and challenges of air traffic control.
+
 ## Ideation Phase
 We came up with our idea from listing themes we were individually interested in. Aviation came up as one of the interests and we ultimately voted on it as our theme which evolved into air traffic control.
 
