@@ -2,7 +2,7 @@
 ## Purpose
 This was our final project for our VR Development for Games class in the spring of 2023. Our team members consisted of Danny Bernal, Neal Davar, Austin Nguyen, Davie Nguyen, Michael Ning, Anand Valavalkar. 
 
-##Overview
+## Overview
 The player is an air traffic controller responsible for managing an airport's airplane takeoffs and landings. The player is in a control tower with monitors and controls allowing them to view and control arriving and departing planes. The player must manage the plane's resources and runway timers without causing airplane collisions and prioritizing on time arrivals and departures. The player’s goal is to manage the airplanes' takeoffs and landings efficiently without collisions, and allow the highest number of ontime arrivals and departures. In addition, the fuel level of the planes will allow for higher points to be scored at the end. Planes landed or taken off can also be scored according to the priority of the flights.
 
 ## Ideation Phase
@@ -12,7 +12,7 @@ We came up with our idea from listing themes we were individually interested in.
 
 We also considered the ideas of wave based survival games (wizards and magic, bloons tower defense) as well as matching/pattern games (objective matching manufacturing game, DJ simulator).
 
-##Playtest Feedback
+## Playtest Feedback
 Our playtest yielded some very good feedback, from both the TA and from fellow students. One of the main pieces of feedback concerned the clarity of the instructions and gameplay. Some of the playtesters were initially confused about how to play the game and also what the overall point of the game was, at least prior to one of the developer’s verbal guidance. We did also receive a lot of positive feedback; playtesters were impressed with the graphics and being able to see their actions translate to actual planes taking off and arriving. With this game being somewhat of a puzzle-type/strategy game, playtesters said they were excited to test their brain power. 
 
 Changes that we made in response to this feedback, was to add an instruction screen/page that players can read before clicking start.This should be a comprehensive tutorial video that plays before starting and will have coinciding, clear text.
