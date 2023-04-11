@@ -16,8 +16,15 @@ public class DepartureButton : MonoBehaviour
     {
         if(terminal != null && atc != null){
             if (terminal._planes.Count > buttonNumber) {    // only renders text if there is a plane's data to display
-                this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = terminal._planes[buttonNumber]._flightName.Substring(terminal._planes[buttonNumber]._flightName.Length - 4) 
-                + " " + terminal._planes[buttonNumber].status.ToString();
+                string priority = "";
+                if(terminal._planes[buttonNumber].priority.Equals("Higher Piority")){
+                    priority = "!";
+                }else if (terminal._planes[buttonNumber].priority.Equals("Emergency")){
+                    priority = "!!!";
+                }
+
+                this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = terminal._planes[buttonNumber].ident 
+                + " " + priority + " " + terminal._planes[buttonNumber].status.ToString();
                 if (buttonNumber == atc.selectedButton && atc.isDepartureButton) {
                     this.transform.GetChild(0).gameObject.GetComponent<TMPro.TextMeshProUGUI>().color = Color.green;   // color when a button is selected
                 } else {

@@ -12,6 +12,7 @@ public class Airplane : MonoBehaviour
     public const float DEPART_MULT_MED = 1.25f; // multiplier for terminal planes waiting more than 30 seconds
     public const float DEPART_MULT_XTR = 1.5f; // multiplier for terminal planes waiting more than 60 seconds
     public string _flightName;  // flight identifier
+    public string ident;
     public int _flightIndex;
     public PlaneStatus status;  // status of this plane
 
@@ -90,13 +91,13 @@ public class Airplane : MonoBehaviour
         if (this.status == PlaneStatus.TakingOff &&  timeToAir <= 0) {
             terminal._planes.Remove(this);
             if(waitingTimeSeconds <= MED_WAIT_TIME) {
-                GameManager.score += Mathf.Max(baseValue - ((waitingTimeSeconds - LEEWAY) * priorityMultiplier), 0);
+                GameManager.score += Mathf.Max(baseValue - (Mathf.Max((waitingTimeSeconds - LEEWAY), 0) * priorityMultiplier), 0);
             }
             else if(waitingTime <= XTR_WAIT_TIME) {
-                GameManager.score += Mathf.Max(baseValue - (((int)(waitingTimeSeconds * DEPART_MULT_MED) - LEEWAY) * priorityMultiplier), 0);
+                GameManager.score += Mathf.Max(baseValue - (Mathf.Max(((int)(waitingTimeSeconds * DEPART_MULT_MED) - LEEWAY), 0) * priorityMultiplier), 0);
             }
             else {
-                GameManager.score += Mathf.Max(baseValue - (((int)(waitingTimeSeconds * DEPART_MULT_XTR) - LEEWAY) * priorityMultiplier), 0);
+                GameManager.score += Mathf.Max(baseValue - (Mathf.Max(((int)(waitingTimeSeconds * DEPART_MULT_XTR) - LEEWAY), 0) * priorityMultiplier), 0);
             }
             //turn off the panel
             GameObject g = ATC.FindInActiveObjectByName("FlightDisplay");

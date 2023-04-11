@@ -22,7 +22,7 @@ public class FailGameText : MonoBehaviour
     {
         points.text =  InfoHolder.Points.ToString();
         failureReason.text = InfoHolder.FailureReason;
-        Debug.Log("Hello world: " + points.text);
+        //Debug.Log("Hello world: " + points.text);
         
     }
 }
