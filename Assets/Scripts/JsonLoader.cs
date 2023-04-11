@@ -35,7 +35,7 @@ public class GameObjectList
 public class JsonLoader : MonoBehaviour
 {
     public string csvjson;
-    public GameObject prefab;
+    public GameObject DaddyObject;
 
     void Start()
     {
@@ -49,7 +49,7 @@ public class JsonLoader : MonoBehaviour
 
         foreach (GameObjectData gameObjectData in gameObjectList.gameObjects)
         {
-            GameObject obj = Instantiate(prefab, gameObjectData.callSign, gameObjectData.IATA, gameObjectData.ICAO, gameObjectData.PlaneIdent, gameObjectData.AD, gameObjectData.AD_IATA, gameObjectData.PlaneType, gameObjectData.PriorityEmergency, gameObjectData.Fuel, gameObjectData.TimeTillOntimeArriveDepart, gameObjectData.PlaneAsset, gameObjectData.MaxPassengers, gameObjectData.PlaneSize, gameObjectData.MinFuel, gameObjectData.timeToTerminal, gameObjectData.timeToRunway, gameObjectData.timeToLand, gameObjectData.timeToAir);
+            GameObject obj = Instantiate(DaddyObject, gameObjectData.callSign, gameObjectData.IATA, gameObjectData.ICAO, gameObjectData.PlaneIdent, gameObjectData.AD, gameObjectData.AD_IATA, gameObjectData.PlaneType, gameObjectData.PriorityEmergency, gameObjectData.Fuel, gameObjectData.TimeTillOntimeArriveDepart, gameObjectData.PlaneAsset, gameObjectData.MaxPassengers, gameObjectData.PlaneSize, gameObjectData.MinFuel, gameObjectData.timeToTerminal, gameObjectData.timeToRunway, gameObjectData.timeToLand, gameObjectData.timeToAir);
             obj.name = gameObjectData.name;
         }
     }
