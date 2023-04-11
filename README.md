@@ -1,6 +1,6 @@
 # FINAL APPROACH VR DESIGN DOCUMENT
 ## Purpose
-This was our final project for our VR Development for Games class in the spring of 2023. Our team members consisted of Danny Bernal, Neal Davar, Austin Nguyen, Davie Nguyen, Michael Ning, Anand Valavalkar. 
+This was our final project for our VR Development for Games class in the spring of 2023. Our team members consisted of Danny Bernal, [Neal Davar](https://nealdavar.com), Austin Nguyen, Davie Nguyen, [Michael Ning](https://www.linkedin.com/in/michael-ning-b495b3209/), [Anand Valavalkar](https://www.anandvalavalkar.com). 
 
 ## Overview
 The player is an air traffic controller responsible for managing an airport's airplane takeoffs and landings. The player is in a control tower with monitors and controls allowing them to view and control arriving and departing planes. The player must manage the plane's resources and runway timers without causing airplane collisions and prioritizing on time arrivals and departures. The player’s goal is to manage the airplanes' takeoffs and landings efficiently without collisions, and allow the highest number of ontime arrivals and departures. In addition, the fuel level of the planes will allow for higher points to be scored at the end. Planes landed or taken off can also be scored according to the priority of the flights.
@@ -14,8 +14,6 @@ To further enhance the authenticity of our game, we integrated accurate 3D rende
 
 ## Ideation Phase
 We came up with our idea from listing themes we were individually interested in. Aviation came up as one of the interests and we ultimately voted on it as our theme which evolved into air traffic control.
-
-
 
 We also considered the ideas of wave based survival games (wizards and magic, bloons tower defense) as well as matching/pattern games (objective matching manufacturing game, DJ simulator).
 
@@ -33,9 +31,6 @@ Since there is not really a storyline per se, our game is much more about discov
 Once the user selects a level and clicks the starting button, a series of flights will appear on the dashboard monitor, each with certain stats. Planes must be optimally assigned to runways in order to maximize the points earned. Planes that pass a waiting time will earn no points while a plane that loses its fuel while in the air instantly causes the player to lose the game. The goal is to get as many points to advance to the next level, where the game will become more complex with the addition of runways and airplane types.
 
 Our game includes a few mechanics that are quite apparent as a user attempts to achieve victory and get the highest score. Users can click/push buttons on the console, swipe through a menu of planes, grab door handles to enter and exit the tower and teleport (via ray-induced click) throughout the environment. Also included are additional scenes that allow the user to navigate through the airport using a vehicle such as a car or firetruck.
-
-
-
 
 ## Aesthetic Style
 Our Aesthetics mostly feature a modern - futuristic Air traffic control scene. The actual gameplay UI is a sort of hologram panel projection where the user can interact using ray cast.The Air traffic control center features an area with many monitors and computers, representative of what a real ATC would look like (sort of).
