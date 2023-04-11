@@ -306,8 +306,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeaa440ece072754f80f7a74485b98b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  airplane: {fileID: 8936030728014859960, guid: 4f1fc0df22e7709468ff3501cd5f0ae7,
-    type: 3}
+  models:
+  - {fileID: 8936030728014859960, guid: dbce8f03258f9624b92547c6eb8ff591, type: 3}
+  - {fileID: 8936030728014859960, guid: fbd82653b51d8d145b3ddfcc9571b548, type: 3}
+  - {fileID: 8936030728014859960, guid: 4f1fc0df22e7709468ff3501cd5f0ae7, type: 3}
+  - {fileID: 8936030728014859960, guid: 8476b75bcbd77fe479938c23e198388d, type: 3}
+  - {fileID: 8936030728014859960, guid: e35a65b52890fd646aa529aade2157d5, type: 3}
+  - {fileID: 8936030728014859960, guid: 1d4c1590c333aa44bad1f3ab6279e375, type: 3}
+  - {fileID: 8936030728014859960, guid: 749e2106b13213049acf1ca705a1e7ce, type: 3}
+  - {fileID: 8936030728014859960, guid: 749e2106b13213049acf1ca705a1e7ce, type: 3}
+  - {fileID: 8936030728014859960, guid: 769f56e8fd4a93c45a6c371f02da2325, type: 3}
+  - {fileID: 8936030728014859960, guid: 97490bfbd832f5a49b3f4454625522cc, type: 3}
   _planes: []
   button: {fileID: 4735878820672234469}
   _buttons: []
@@ -491,8 +500,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b2237493cdff048a7bec0b391c5397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  airplane: {fileID: 8936030728014859960, guid: 4f1fc0df22e7709468ff3501cd5f0ae7,
-    type: 3}
+  models:
+  - {fileID: 8936030728014859960, guid: dbce8f03258f9624b92547c6eb8ff591, type: 3}
+  - {fileID: 8936030728014859960, guid: fbd82653b51d8d145b3ddfcc9571b548, type: 3}
+  - {fileID: 8936030728014859960, guid: 4f1fc0df22e7709468ff3501cd5f0ae7, type: 3}
+  - {fileID: 8936030728014859960, guid: 8476b75bcbd77fe479938c23e198388d, type: 3}
+  - {fileID: 8936030728014859960, guid: e35a65b52890fd646aa529aade2157d5, type: 3}
+  - {fileID: 8936030728014859960, guid: 1d4c1590c333aa44bad1f3ab6279e375, type: 3}
+  - {fileID: 8936030728014859960, guid: 749e2106b13213049acf1ca705a1e7ce, type: 3}
+  - {fileID: 8936030728014859960, guid: 43dc2a88188c3894e919a7b28bd08e35, type: 3}
+  - {fileID: 8936030728014859960, guid: 769f56e8fd4a93c45a6c371f02da2325, type: 3}
+  - {fileID: 8936030728014859960, guid: 97490bfbd832f5a49b3f4454625522cc, type: 3}
   button: {fileID: 7081802835661417933}
   _planes: []
   _buttons: []
