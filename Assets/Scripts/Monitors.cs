@@ -13,7 +13,7 @@ public class Monitors : MonoBehaviour
         if(!istimer){
             return;
         }
-        this.gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "10:00";
+        //this.gameObject.GetComponent<TMPro.TextMeshProUGUI>().text = "10:00";
     }
 
     // Update is called once per frame

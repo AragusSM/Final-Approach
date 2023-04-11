@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
 
     public void returnToMenu() {
         SceneManager.LoadScene(0);
+        GameManager.time_left = 600;
     }
 }
 
